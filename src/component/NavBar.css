@@ -1,0 +1,47 @@
+.nav__header {
+    display: justify, flex;
+}
+
+.nav__main {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: rgb(9, 108, 126);
+}
+
+.nav__div {
+    display: justify, flex;
+    margin: 0;
+    padding: 0;
+    background: rgb(68, 112, 129);
+}
+
+.nav__home {
+    display: justify, flex;
+    margin: .4%;
+    padding: 1%;
+    background: black;
+    color: white;
+}
+.nav__form {
+    display:justify, flex;
+    margin: .4%;
+    padding: 1%;
+    background: black;
+    color: white;
+}
+
+.nav__request {
+    display: flex;
+    margin: .4%;
+    padding: 1%;
+    background: black;
+    color: white;
+}
+.nav__cart {
+    display: flex;
+    margin: .4%;
+    padding: 1%;
+    background: black;
+    color: white;
+}
