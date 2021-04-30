@@ -1,11 +1,20 @@
 import React from "react";
+import UploadFile from './UploadFile'
+import './AutoCalcForm.css'
 
 class AutoCalcForm extends React.Component {
   state = {
     products: [
-      { title: "Color", count: 0, price: 2.49 },
-      { title: "B&W", count: 0, price: 1.78 },
-      { title: "Half&Half", count: 0, price: 2.89 },
+      { title: "Color XLarge", size: '12" X 18"', count: 0, price: 2.50 },
+      { title: "Color Large", size: '11" X 17"', count: 0, price: 1.75 },
+      { title: "Color Medium", size: '8.5" X 11"', count: 0, price: 2.75 },
+      { title: "Color Small", size: '8.5" X 5.5"', count: 0, price: 2.50 },
+      { title: "Color XSmall", size: '4.25" X 5.5"', count: 0, price: 1.75 },
+      { title: "B&W XLarge", size: '12" X 18"', count: 0, price: 2.80 },
+      { title: "B&W Large", size: '11" X 17"', count: 0, price: 2.50 },
+      { title: "B&W Medium", size: '8.5" X 11"', count: 0, price: 1.75 },
+      { title: "B&W Small", size: '8.5" X 5.5"', count: 0, price: 2.75 },
+      { title: "B&W XSmall", size: '4.25" X 5.5"', count: 0, price: 2.75 },
     ],
   };
 
@@ -16,15 +25,18 @@ class AutoCalcForm extends React.Component {
       ),
     });
   };
-
+  
   render() {
-  return (
+    return (
+      <>
     <div className='product__box'>
       <ProductList products={this.state.products} onChange={this.onChange} />
       <Total products={this.state.products} />
+    <UploadFile />
     </div>
+    </>
   );
-  }
+}
 }
 
 const ProductList = ({ products, onChange }) => (
@@ -37,6 +49,7 @@ const ProductList = ({ products, onChange }) => (
           value={product.count}
           onChange={(e) => onChange(i, parseInt(e.target.value) || 0)}
         />
+        {product.size}
       </li>
     ))}
   </ul>

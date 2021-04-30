@@ -1,3 +1,14 @@
-.product__box {
-    background-color: rgb(18, 143, 122);
+* {
+    max-width: auto;
+    margin: auto;
+    padding: auto;
 }
+
+.product__box {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1%;
+  background: rgb(210, 214, 214); 
+}
+
+

@@ -6,14 +6,14 @@
     display: flex;
     padding: 0;
     margin: 0;
-    background: rgb(9, 108, 126);
+    background: rgb(210, 214, 214);
 }
 
 .nav__div {
     display: justify, flex;
     margin: 0;
     padding: 0;
-    background: rgb(68, 112, 129);
+    background: rgb(210, 213, 214);
 }
 
 .nav__home {

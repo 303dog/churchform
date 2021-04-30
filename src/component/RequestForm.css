@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+};
+
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid rgb(26, 248, 6);
+    resize: vertical;
+  };
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  .request__file {
+    float: center;
+    width: 75%;
+    margin: 4%;
+    background:rgb(208, 225, 235);
+    margin-top: 25px;
+    text-align: center;
+
+  }
+  
+  input[type=submit] {
+    background-color: #72a0a1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: center;
+  }
+  
+  input:hover {
+    background-color: #0bf717;
+  }
+  
+  .request__container {
+    background: rgb(210, 214, 214);
+    width: 28%;
+    padding: 2%;
+    margin: auto;    
+  }
+  
+  .col-25 {
+    float: center;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: center;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .request__row:after {
+    content: "";
+    display: table;
+    clear: both;
+    float: center;
+  }
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
