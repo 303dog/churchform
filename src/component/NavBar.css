@@ -1,47 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 .nav__header {
-    display: justify, flex;
+  display: justify, flex;
 }
 
 .nav__main {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    background: rgb(189, 190, 190);
+  font-family: "Jost";
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background: snow;
 }
 
 .nav__div {
-    display: justify, flex;
-    margin: 0;
-    padding: 0;
-    background: rgb(189, 190, 190);
+  margin: 0;
+  padding: 0;
+  background: snow;
 }
 
 .nav__home {
-    display: justify, flex;
-    margin: .4%;
-    padding: 1%;
-    background: black;
-    color: white;
+  margin: 0.4%;
+  padding: 1%;
+  background: ghostwhite;
+  color: black;
 }
 .nav__form {
-    display:justify, flex;
-    margin: .4%;
-    padding: 1%;
-    background: black;
-    color: white;
+  margin: 0.4%;
+  padding: 1%;
+  background: ghostwhite;
+  color: black;
+}
+
+.nav__form:hover {
+  background-color: rgb(216, 216, 220);
+  border-radius: 50%;
 }
 
 .nav__request {
-    display: flex;
-    margin: .4%;
-    padding: 1%;
-    background: black;
-    color: white;
+  margin: 0.4%;
+  padding: 1%;
+  background: ghostwhite;
+  color: black;
+}
+
+.nav__request:hover {
+  background-color: rgb(216, 216, 220);
+  border-radius: 50%;
 }
 .nav__cart {
-    display: flex;
-    margin: .4%;
-    padding: 1%;
-    background: black;
-    color: white;
+  margin: 0.4%;
+  padding: 1%;
+  background: ghostwhite;
+  color: black;
+}
+
+.nav__cart:hover {
+  background-color: rgb(216, 216, 220);
+  border-radius: 50%;
+}
+
+.nav__home:hover {
+  background-color: rgb(216, 216, 220);
+  border-radius: 50%;
 }

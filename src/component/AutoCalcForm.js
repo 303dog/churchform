@@ -1,6 +1,5 @@
 import React from "react";
 import "./AutoCalcForm.css";
-import Shipping from "./Shipping";
 import UploadFile from "./UploadFile";
 
 class AutoCalcForm extends React.Component {
@@ -35,13 +34,10 @@ class AutoCalcForm extends React.Component {
             products={this.state.products}
             onChange={this.onChange}
           />
+        <div className='product__tot'>
           <Total products={this.state.products} />
-          <Shipping
-            count={this.state.count}
-            title={this.state.title}
-            value={this.state.value}
-          />
-          <UploadFile />
+          </div>
+        <UploadFile />
         </div>
       </>
     );
@@ -49,19 +45,35 @@ class AutoCalcForm extends React.Component {
 }
 
 const ProductList = ({ products, onChange }) => (
-  <ul>
-    {products.map((product, i) => (
-      <li key={i}>
-        {product.title}
-        <input
-          type='text'
-          value={product.count}
-          onChange={(e) => onChange(i, parseInt(e.target.value) || 0)}
-        />
-        {product.size}
-      </li>
-    ))}
-  </ul>
+  <div className='box'>
+    <fieldset>
+    <legend>Label Selector</legend>
+      <div className='main'>
+        <table>
+          <tr>
+            {products.map((product, i) => (
+              <td className='row'>
+                {" "}
+                <div key={i}>
+                  {product.title} {product.size}
+                  <td  className='product__each'>
+                    <input
+                      className='fld'
+                      type='text'
+                      value={product.count}
+                      onChange={(e) =>
+                        onChange(i, parseInt(e.target.value) || 0)
+                      }
+                    />
+                  </td>
+                </div>
+              </td>
+            ))}
+          </tr>
+        </table>
+      </div>
+    </fieldset>
+  </div>
 );
 
 const Total = ({ products }) => (
