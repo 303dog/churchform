@@ -18,19 +18,22 @@ export default function NavBar() {
             to='/order'
             className='nav__form'
           >
-            Order{" "}
+            <i class="fas fa-store"></i>
+            {" "}
           </NavLink>
           <NavLink
             to='/request'
             className='nav__request'
           >
-            Request{" "}
+            <i class="fas fa-comment-dots"></i>
+            {" "}
           </NavLink>
           <NavLink
             to='/cart'
             className='nav__cart'
           >
-            Cart{" "}
+            <i class="fas fa-shopping-cart"></i>
+            {" "}
           </NavLink>
         </nav>
       </div>

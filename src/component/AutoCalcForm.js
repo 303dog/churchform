@@ -1,20 +1,21 @@
 import React from "react";
 import "./AutoCalcForm.css";
-import UploadFile from "./UploadFile";
+import Button from "./Button";
+import Upload from "./Upload";
 
 class AutoCalcForm extends React.Component {
   state = {
     products: [
-      { title: "Color XLarge", size: '12" X 18"', count: 0, price: 2.5 },
-      { title: "Color Large", size: '11" X 17"', count: 0, price: 1.75 },
-      { title: "Color Medium", size: '8.5" X 11"', count: 0, price: 2.75 },
-      { title: "Color Small", size: '8.5" X 5.5"', count: 0, price: 2.5 },
-      { title: "Color XSmall", size: '4.25" X 5.5"', count: 0, price: 1.75 },
-      { title: "B&W XLarge", size: '12" X 18"', count: 0, price: 2.8 },
-      { title: "B&W Large", size: '11" X 17"', count: 0, price: 2.5 },
-      { title: "B&W Medium", size: '8.5" X 11"', count: 0, price: 1.75 },
-      { title: "B&W Small", size: '8.5" X 5.5"', count: 0, price: 2.75 },
-      { title: "B&W XSmall", size: '4.25" X 5.5"', count: 0, price: 2.75 },
+      { title: "Color Labels", size: '12"x18"', count: 0, price: 2.5 },
+      { title: "Color Labels", size: '11"x17"', count: 0, price: 1.75 },
+      { title: "Color Labels", size: '8.5"x11"', count: 0, price: 2.75 },
+      { title: "Color Labels", size: '8.5"x5.5"', count: 0, price: 2.5 },
+      { title: "Color Labels", size: '4.25"x5.5"', count: 0, price: 1.75 },
+      { title: "Standard Labels", size: '12"x18"', count: 0, price: 2.8 },
+      { title: "Standard Labels", size: '11"x17"', count: 0, price: 2.5 },
+      { title: "Standard Labels", size: '8.5"x11"', count: 0, price: 1.75 },
+      { title: "Standard Labels", size: '8.5"x5.5"', count: 0, price: 2.75 },
+      { title: "Standard Labels", size: '4.25"x5.5"', count: 0, price: 2.75 },
     ],
   };
 
@@ -29,15 +30,15 @@ class AutoCalcForm extends React.Component {
   render() {
     return (
       <>
-        <div className='product__box'>
+        <div className='auto__main'>
           <ProductList
             products={this.state.products}
             onChange={this.onChange}
           />
-        <div className='product__tot'>
+
           <Total products={this.state.products} />
-          </div>
-        <UploadFile />
+
+          <Upload />
         </div>
       </>
     );
@@ -45,38 +46,45 @@ class AutoCalcForm extends React.Component {
 }
 
 const ProductList = ({ products, onChange }) => (
-  <div className='box'>
-    <fieldset>
-    <legend>Label Selector</legend>
-      <div className='main'>
-        <table>
-          <tr>
-            {products.map((product, i) => (
-              <td className='row'>
-                {" "}
-                <div key={i}>
-                  {product.title} {product.size}
-                  <td  className='product__each'>
-                    <input
-                      className='fld'
-                      type='text'
-                      value={product.count}
-                      onChange={(e) =>
-                        onChange(i, parseInt(e.target.value) || 0)
-                      }
-                    />
-                  </td>
-                </div>
-              </td>
-            ))}
-          </tr>
-        </table>
-      </div>
-    </fieldset>
-  </div>
+  <>
+    <div className='auto__container'>
+      <fieldset>
+        <legend>Build Your Order</legend>
+        <form>
+          {products.map((product, i) => (
+            <div className='auto__row'>
+              <div className='auto__col25'>
+                <label>{product.title}</label>
+              </div>
+              <div className='auto__col75' key={i}>
+                {product.size}
+              </div>
+
+              <input
+                className='auto__input'
+                type='text'
+                value={product.count}
+                onChange={(e) => onChange(i, parseInt(e.target.value) || 0)}
+              />
+            </div>
+          ))}
+        </form>
+        <Button
+          type='Submit'
+          className='auto__button'
+          onClick={""}
+          title='Submit'
+        />
+      </fieldset>
+    </div>
+  </>
 );
 
 const Total = ({ products }) => (
-  <h3>Price: ${products.reduce((sum, i) => (sum += i.count * i.price), 0)}</h3>
+  <div className='auto__total'>
+    <h3>
+      Price: ${products.reduce((sum, i) => (sum += i.count * i.price), 0)}
+    </h3>
+  </div>
 );
 export default AutoCalcForm;

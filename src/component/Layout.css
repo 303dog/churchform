@@ -1,0 +1,19 @@
+body {
+    background-color: rgba(195, 207, 224, 0.774);
+}
+
+
+.layout__container {
+    content: right;
+    text-align: justify;
+}
+
+.product__application  {
+    background-color: rgb(248, 101, 101);
+}
+
+.responsive-image_img {
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
