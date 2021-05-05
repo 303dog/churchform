@@ -8,6 +8,12 @@
   display: justify, flex;
 }
 
+.nav__brand {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Staatliches';
+}
+
 .nav__main {
   font-family: "Jost";
   display: flex;

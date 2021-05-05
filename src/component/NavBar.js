@@ -5,6 +5,7 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <header className='nav_header'>
+      <h1 className='nav__brand'> irononcarpetlabels.com </h1>
       <div className='nav__div'>
         <nav className='nav__main'>
           <NavLink
