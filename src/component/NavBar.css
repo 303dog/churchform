@@ -57,14 +57,14 @@
   background-color: rgba(195, 207, 224, 0.774);
   border-radius: 50%;
 }
-.nav__cart {
+.nav__payment {
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
   color: black;
 }
 
-.nav__cart:hover {
+.nav__payment:hover {
   background-color:  rgba(195, 207, 224, 0.774);
   border-radius: 50%;
 }

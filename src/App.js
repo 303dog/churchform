@@ -5,7 +5,7 @@ import Layout from './component/Layout'
 import AutoCalcForm from './component/AutoCalcForm'
 import RequestForm from './component/RequestForm'
 import Upload from './component/Upload'
-import Checkout from './component/Checkout'
+import Payment from './component/Payment'
 
 
 
@@ -17,7 +17,7 @@ function App() {
       <Route exact path='/' component={Layout} />
       <Route path='/order' component={AutoCalcForm} />
       <Route path='/request' component={RequestForm} />
-      <Route path='/cart' component={Checkout} />
+      <Route path='/payment' component={Payment} />
       <Route path='/upload' component={Upload} />
       </Switch>
 

@@ -72,7 +72,7 @@ const ProductList = ({ products, onChange }) => (
         <Button
           type='Submit'
           className='auto__button'
-          onClick={""}
+          onChange={""}
           title='Submit'
         />
       </fieldset>

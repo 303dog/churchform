@@ -30,8 +30,8 @@ export default function NavBar() {
             {" "}
           </NavLink>
           <NavLink
-            to='/cart'
-            className='nav__cart'
+            to='/payment'
+            className='nav__payment'
           >
             <i class="fas fa-shopping-cart"></i>
             {" "}
