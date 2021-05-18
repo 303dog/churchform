@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "./Button";
 import "./RequestForm.css";
 import Upload from "./Upload";
 
@@ -82,12 +81,6 @@ export default function RequestForm() {
           </form>
           <h5>{status}</h5>
         </fieldset>
-      <Button
-        type='submit'
-        className='request__button'
-        onClick={handleSubmit}
-        title='Submit'
-      />
       </div>
       <Upload />
     </>

@@ -1,8 +1,17 @@
 
+.auto__button {
+  display: center;
+  content: center;
+  padding: 10px;
+  width: 375px;
+  margin-top: 1%;
+  color: white;
+  background-color: rgb(236, 163, 28);
+}
 
 .auto__input[type=text]{
   width: 55px;
-  border: 5px solid rgb(62, 66, 80);
+  border: 2px solid #ad0000;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
@@ -35,13 +44,17 @@ label {
 }
 
 .upload__container {
-  display: justify;
+  display: center;
+  content: center;
+  padding: 10px;
+  width: 375px;
+  margin-top: 1%;
 }
 
 .auto__container, h3, .upload__container {
   content: justify;
   border-radius: 5px;
-  background-color: rgb(62, 66, 80);
+  background-color: #103C7F;
   padding: 10px;
   width: 375px;
   margin-right: auto;
@@ -52,14 +65,14 @@ label {
 }
 
 .auto__col25 {
-  background-color: rgb(62, 66, 80);
+  background-color: #103C7F;
   float: left;
   width: 40%;
   margin-top: 1px;
 }
 
 .auto__col75 {
-  background-color:  rgb(62, 66, 80);
+  background-color:  #103C7F;
   float: left;
   width: 40%;
   margin-top: 1px;

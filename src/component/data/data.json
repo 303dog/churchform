@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "title": "Color Label",
+    "about": "Full color carpet label... some catchy descriptions",
+    "other_product_details": "misc random info about item"
+  },
+  {
+    "id": 2,
+    "title": "Standard Label",
+    "about": "this is medium description of stickers",
+    "other_product_details": "any other optional info about standard type labels"
+  },
+  {
+    "id": 3,
+    "title": "Custom Label",
+    "about": "this is large stickers 'about' section text.",
+    "other_product_details": "maybe something about shapes?"
+  },
+  {
+    "id": 4,
+    "size": "12x18",
+    "colorprice": 3.0
+  },
+  {
+    "id": 5,
+    "size": "11x17",
+    "colorprice": 2.5
+  },
+  {
+    "id": 6,
+    "size": "8.5x11",
+    "colorprice": 2.25
+  },
+  {
+    "id": 7,
+    "size": "8.5x5.5",
+    "colorprice": 2.0
+  },
+  {
+    "id": 8,
+    "size": "4.25x5.5",
+    "colorprice": 1.5
+  },
+  {
+    "id": 9,
+    "size": "12x18",
+    "standardprice": 2.75
+  },
+  {
+    "id": 10,
+    "size": "11x17",
+    "standardprice": 2.25
+  },
+  {
+    "id": 11,
+    "size": "8.5x11",
+    "standardprice": 2.0
+  },
+  {
+    "id": 12,
+    "size": "8.5x5.5",
+    "standardprice": 1.75
+  },
+  {
+    "id": 13,
+    "size": "4.25x5.5",
+    "standardprice": 1.25
+  },
+  {
+    "id": 14,
+    "size": "12x18",
+    "customprice": 5.0
+  },
+  {
+    "id": 15,
+    "size": "11x17",
+    "customprice": 4.0
+  },
+  {
+    "id": 16,
+    "size": "8.5x11",
+    "customprice": 3.0
+  },
+  {
+    "id": 17,
+    "size": "8.5x5.5",
+    "customprice": 2.0
+  },
+  {
+    "id": 18,
+    "size": "4.25x5.5",
+    "customprice": 2.0
+  }
+]

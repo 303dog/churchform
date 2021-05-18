@@ -1,11 +1,11 @@
 import React from "react";
 import "./Layout.css";
-import LGT_0070 from "./LGT_0070.jpg";
+//import LGT_0070 from "./LGT_0070.jpg";
 
 export default function Layout() {
   return (
     <div className='layout__container'>
-      <img className='responsive-image_img' src={LGT_0070} alt='logo' />
+     
 
       <table id='product__application'>
         <tr>
@@ -33,7 +33,7 @@ export default function Layout() {
           <td> Vinyl overlays</td>
         </tr>
       </table>
-      <article>
+      <article className='layout__article'>
         Heat Seal Adhesive Coatings Heat Activated adhesive coatings are also
         known as hot-melt coatings or thermo-sensitive coatings.
         Irononcarpetlabels.com can coat paper, textiles or a wide range of
@@ -66,7 +66,7 @@ export default function Layout() {
           </li>
         </ul>
       </article>
-      <article className='layout__article'>
+      <section className='layout__section'>
         EcoEffort At Irononcarpetlabels.com we appreciate the need for ourselves
         and our customers to be responsible members of our global community.
         That is why all of our EVA adhesives are environmentally benign and
@@ -83,7 +83,7 @@ export default function Layout() {
         heat seal label requires both heat and pressure to soften the adhesive,
         allowing it to penetrate the substrate. Upon cooling, this results in a
         stronger bond than is achievable with most pressure-sensitive labels.
-        </article>
+        </section>
     </div>
   );
 }

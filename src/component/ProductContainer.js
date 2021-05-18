@@ -1,9 +1,8 @@
 import React from "react";
-import "./AutoCalcForm.css";
-import Button from "./Button";
+import "./ProductContainer.css";
 import Upload from "./Upload";
 
-class AutoCalcForm extends React.Component {
+class ProductContainer extends React.Component {
   state = {
     products: [
       { title: "Color Labels", size: '12"x18"', count: 0, price: 2.5 },
@@ -35,7 +34,6 @@ class AutoCalcForm extends React.Component {
             products={this.state.products}
             onChange={this.onChange}
           />
-
           <Total products={this.state.products} />
 
           <Upload />
@@ -69,12 +67,7 @@ const ProductList = ({ products, onChange }) => (
             </div>
           ))}
         </form>
-        <Button
-          type='Submit'
-          className='auto__button'
-          onChange={""}
-          title='Submit'
-        />
+  
       </fieldset>
     </div>
   </>
@@ -87,4 +80,5 @@ const Total = ({ products }) => (
     </h3>
   </div>
 );
-export default AutoCalcForm;
+
+export default ProductContainer;

@@ -1,8 +1,7 @@
 
-
 .request__input[type=text] {
   width:  90%;
-  border: 5px solid rgb(62, 66, 80);
+  border: 5px solid #103C7F;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
@@ -21,15 +20,6 @@ legend {
   font-weight: bold;
   font-size: 29px;
 }
-
-Button {
-  border: 1px solid rgb(62, 66, 80);
-  border-radius: 2px;
-  display: center;
-  content: center;
-  background-color: rgb(223, 141, 9);
-}
-
 
 .request__row {
   content: flex;
@@ -73,7 +63,7 @@ img {
 .request__container {
   content: justify;
   border-radius: 5px;
-  background-color: rgb(62, 66, 80);
+  background-color: #103C7F;
   padding: 10px;
   width: 375px;
   margin-right: auto;

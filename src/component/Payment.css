@@ -1,23 +1,23 @@
 .payment__row  {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     margin: 0 -16px;
   }
   
   .payment__col25 {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%;
     flex: 25%;
   }
   
   .payment__col50 {
-    -ms-flex: 50%; /* IE10 */
+    -ms-flex: 50%; 
     flex: 50%;
   }
   
   .payment__col75 {
-    -ms-flex: 75%; /* IE10 */
+    -ms-flex: 75%; 
     flex: 75%;
   }
   
@@ -30,7 +30,7 @@
   .payment__container {
     content: justify;
     border-radius: 5px;
-    background-color: rgb(62, 66, 80);
+    background-color: #103C7F;
     padding: 10px;
     width: 375px;
     margin-right: auto;
@@ -41,7 +41,7 @@
   }
 
     .payment__costs{
-        background-color: rgb(120, 117, 117);
+        background-color: #103C7F;
         border-radius: 3px;
         color: white;
         border: 2px white;

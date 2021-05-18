@@ -19,7 +19,7 @@ class Upload extends React.Component {
         <span className='icon'>
         <i class="fas fa-upload"></i>
         </span>
-        <h4>Upload File</h4>
+        <h4>Upload a file</h4>
         <input type="file" onChange={this.handleChange}/>
         <img src={this.state.file}/>
       </div>

@@ -9,12 +9,16 @@
 }
 
 .nav__brand {
+  
   text-align: center;
   font-size: 50px;
   font-family: 'Staatliches';
+  color:#111E56 ;
+  border:5px solid #ad0000;
 }
 
 .nav__main {
+  border: 5px solid #103c7f;
   font-family: "Jost";
   display: flex;
   padding: 0;
@@ -26,19 +30,20 @@
   margin: 0;
   padding: 0;
   background: ghostwhite;
+  position: sticky;
 }
 
 .nav__home {
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: black;
+  color: #103C7F;
 }
 .nav__form {
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: black;
+  color: #103C7F;
 }
 
 .nav__form:hover {
@@ -50,7 +55,7 @@
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: black;
+  color: #103C7F;
 }
 
 .nav__request:hover {
@@ -61,7 +66,7 @@
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: black;
+  color: #103C7F;
 }
 
 .nav__payment:hover {

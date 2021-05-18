@@ -1,0 +1,41 @@
+th {
+  color: #ad0000;
+  background-color: #ffff;
+}
+
+table,
+th,
+td,
+tr {
+  border: 3px solid #111e56;
+}
+
+td {
+  text-align: left;
+}
+
+.order__select {
+    text-align: center;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+  width: 60%;
+}
+
+thead th:nth-child(2) {
+  width: 50%;
+}
+
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+thead th:nth-child(4) {
+  width: 25%;
+}

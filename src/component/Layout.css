@@ -1,43 +1,54 @@
 body {
-  background-color: rgba(195, 207, 224, 0.774);
+  background-color: rgba(235, 238, 243, 0.774);
 }
 
 .layout__container {
   content: right;
   text-align: justify;
   padding: auto;
+  margin: auto;
 }
 
 #product__application tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #ad0000;
+  color: white;
 }
 
 #product__application td,
 #product__application th {
-  border: 1px solid #ddd;
+  border: 1px solid #103C7F;
   padding: 2px;
 }
 
-.layout__article {
-    column-count: 3;
+.layout__section {
+  margin: 1%;
+  padding: .5%;
+  border: 1px solid #103C7F;
 }
 
+.layout__article {
+    margin: 1%;
+    padding: .5%;
+    border: 1px solid #103C7F;
+  }
+
 table {
-  
-  margin-left: auto; 
-  margin-right: auto;
+  margin: auto;
+  padding: 1%; 
 }
 
 #product__application th {
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
-  background-color: rgb(62, 66, 80);
+  background-color: #103C7F;
   color: white;
 }
 
 .responsive-image_img {
+  background: url('./LGT_0070.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  padding:20%;
   
 }
