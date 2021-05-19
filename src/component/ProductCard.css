@@ -1,7 +1,7 @@
 
 
 .pc__container {
-    background-color: #ffff;
+    background-color: rgb(12, 75, 211);
     border: 6px solid #ad0000;
     min-height: 100vh;
     display: flex;
@@ -19,12 +19,13 @@ fieldset {
     
 }
 
+
 legend {
     color: #ffff;
     font-size: calc(9px + 2vmin);
 }
 
-.pc__main {
+.pc__ma5in {
     content: justify;
     border-radius: 2px;
     background-color: #103c7f;
@@ -56,14 +57,30 @@ button {
 }
 
 .pc__col25 {
-    float: left;
-    margin-top: 1px;
+    float: right;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 .pc__col75 {
-    background-color:  rgb(4, 247, 45);
     float: left;
-    width: 100%;
-    margin-top: 1px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
     
+}
+
+input.pc__input {
+    float: center;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+form {
+    column-count: 2;
 }

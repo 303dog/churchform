@@ -1,38 +1,9 @@
 import React from "react";
 import "./Layout.css";
-//import LGT_0070 from "./LGT_0070.jpg";
 
 export default function Layout() {
   return (
     <div className='layout__container'>
-     
-
-      <table id='product__application'>
-        <tr>
-          <th> APPLICATION</th>
-          <th> MARKET</th>
-        </tr>
-        <tr>
-          <td> Apparel</td>
-          <td> Embroidery, applique attachment, Label</td>
-        </tr>
-        <tr>
-          <td>Consumer Goods</td>
-          <td> Label attachment</td>
-        </tr>
-        <tr>
-          <td>Furniture</td>
-          <td> Label attachment</td>
-        </tr>
-        <tr>
-          <td>Textiles</td>
-          <td> Label attachments, non-fray applications</td>
-        </tr>
-        <tr>
-          <td>Woodworking</td>
-          <td> Vinyl overlays</td>
-        </tr>
-      </table>
       <article className='layout__article'>
         Heat Seal Adhesive Coatings Heat Activated adhesive coatings are also
         known as hot-melt coatings or thermo-sensitive coatings.
@@ -66,6 +37,32 @@ export default function Layout() {
           </li>
         </ul>
       </article>
+      <table id='product__application'>
+        <tr id='product__tr'>
+          <th id='product__th'> MARKET</th>
+          <th id='product__th'> APPLICATION</th>
+        </tr>
+        <tr id='product__tr'>
+          <td id='product__td'> Apparel</td>
+          <td id='product__td'> Embroidery, applique attachment, Label</td>
+        </tr>
+        <tr id='product__tr'>
+          <td id='product__td'>Consumer Goods</td>
+          <td id='product__td'> Label attachment</td>
+        </tr>
+        <tr id='product__tr'>
+          <td id='product__td'>Furniture</td>
+          <td id='product__td'> Label attachment</td>
+        </tr>
+        <tr id='product__tr'>
+          <td id='product__td'>Textiles</td>
+          <td id='product__td'> Label attachments, non-fray applications</td>
+        </tr>
+        <tr id='product__tr'>
+          <td id='product__td'>Woodworking</td>
+          <td id='product__td'> Vinyl overlays</td>
+        </tr>
+      </table>
       <section className='layout__section'>
         EcoEffort At Irononcarpetlabels.com we appreciate the need for ourselves
         and our customers to be responsible members of our global community.

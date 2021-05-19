@@ -9,46 +9,36 @@ body {
   margin: auto;
 }
 
-#product__application tr:nth-child(even) {
-  background-color: #ad0000;
-  color: white;
-}
-
-#product__application td,
-#product__application th {
-  border: 1px solid #103C7F;
-  padding: 2px;
-}
-
 .layout__section {
   margin: 1%;
-  padding: .5%;
-  border: 1px solid #103C7F;
+  padding: 0.5%;
 }
 
 .layout__article {
-    margin: 1%;
-    padding: .5%;
-    border: 1px solid #103C7F;
-  }
-
-table {
-  margin: auto;
-  padding: 1%; 
+  margin: 1%;
+  padding: 0.5%;
 }
 
-#product__application th {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-align: center;
-  background-color: #103C7F;
+#product__application { 
+  width: 50%; 
+  margin-left: 25%;
+  margin-right: 25%;
+  border-collapse: collapse; 
+  border: 2px solid #103c7f;
+}
+/* Zebra striping */
+#product__tr:nth-of-type(even) { 
+  background: #ad0000; 
   color: white;
 }
+#product__th { 
+  background: #103c7f; 
+  color: white; 
+  font-weight: bold; 
+  text-align: center;
+}
 
-.responsive-image_img {
-  background: url('./LGT_0070.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding:20%;
-  
+#product__td { 
+  padding: 1px; 
+  text-align: left; 
 }
