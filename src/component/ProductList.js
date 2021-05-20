@@ -10,8 +10,8 @@ const ProductList = ({ products, onChange }) => (
           <div className='pc__row'>
           {products.map((product, i) => (
               <div className='pc__col25' key={i}>
-                <label>{product.title}</label>
-              <div className='pc__col75'>{product.size}</div>
+                <label>{product.title}{' '}{product.size}</label>
+              <div className='pc__col75'></div>
               <input
                 className='pc__input'
                 type='text'

@@ -1,7 +1,7 @@
 
 
 .pc__container {
-    background-color: rgb(12, 75, 211);
+    background-color: rgb(127, 186, 245);
     border: 6px solid #ad0000;
     min-height: 100vh;
     display: flex;
@@ -15,23 +15,27 @@
 fieldset {
     border-width: 10px ;
     border-color: #ad0000;
-    margin-bottom: 1%;
-    
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: .25%;
+    position: center;
 }
 
 
 legend {
     color: #ffff;
-    font-size: calc(9px + 2vmin);
+    font-size: calc(11px + 2vmin);
 }
 
-.pc__ma5in {
-    content: justify;
+.auto__main {
+    content: center;
     border-radius: 2px;
     background-color: #103c7f;
-    border: 6px solid #ad0000;
-    padding: 10px;
-    width: 375px;
+    border: 8px solid #ad0000;
+    padding: 1%;
+    width: auto;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
@@ -48,7 +52,8 @@ button {
 }
 
 .pc__total {
-    display: justify;
+    content: center;
+    
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 5%;
@@ -57,30 +62,46 @@ button {
 }
 
 .pc__col25 {
-    float: right;
+    float: center;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 1%;
 }
 
 .pc__col75 {
-    float: left;
+    float: center;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 1%;
-    
 }
 
 input.pc__input {
     float: center;
     margin-top: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 1%;
+}
+
+label {
+    float: center;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 1%;
+}
+
+.pc__row {
+    content: justify;
+    width: 75%;
+    width: auto;
+    height: auto;
+    color: white;
 }
 
 form {
     column-count: 2;
+    display: center;
 }
