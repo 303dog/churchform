@@ -1,6 +1,7 @@
 import React from "react";
-import "./ProductCard.css";
+//import "./ProductCard.css";
 import Products from "./Products";
+import './ProductList'
 
 
 class ProductCard extends React.Component {

@@ -5,13 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 .nav__header {
-  display: justify, flex;
+  width: 100%;
 }
 
-.nav__brand {
-  
+.nav__brand{
   text-align: center;
-  font-size: 50px;
+  font-size: calc(100% + 2vmin);
   font-family: 'Staatliches';
   color:#111E56 ;
   border:5px solid #ad0000;
