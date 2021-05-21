@@ -6,7 +6,7 @@ import Layout from './component/Layout'
 import RequestForm from './component/RequestForm'
 import Upload from './component/Upload'
 import Payment from './component/Payment'
-import Checkout from './component/Checkout'
+//import Checkout from './component/Checkout'
 //import Footer from './component/Footer'
 import ProductCard from "./component/ProductCard"
 
@@ -22,7 +22,6 @@ function App() {
       <Route path='/request' component={RequestForm} />
       <Route path='/payment' component={Payment} />
       <Route path='/upload' component={Upload} />
-      <Route path='/checkout' component={Checkout} />
       </Switch>
     
     </Router>
