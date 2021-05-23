@@ -8,7 +8,7 @@ import Upload from './component/Upload'
 import Payment from './component/Payment'
 //import Checkout from './component/Checkout'
 //import Footer from './component/Footer'
-import ProductCard from "./component/ProductCard"
+import ProductCard from  "./component/ProductCard"
 
 
 
