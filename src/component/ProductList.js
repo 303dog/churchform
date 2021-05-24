@@ -1,5 +1,6 @@
 import React from "react";
 import './ProductList.css'
+import './ProductCard.css'
 
 const ProductList = ({ products, onChange }) => (
   <>

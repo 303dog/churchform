@@ -39,3 +39,10 @@ thead th:nth-child(3) {
 thead th:nth-child(4) {
   width: 25%;
 }
+
+.order__container {
+  border-radius: 5px;
+  background-color: #103C7F;
+  padding: 20px;
+  color: white;
+}

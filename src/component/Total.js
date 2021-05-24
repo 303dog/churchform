@@ -1,15 +1,17 @@
 import React from 'react'
+import './ProductCard.css'
 
 
   const Total = ({ products }) => (
 
-    <fieldset>
     <div className='pc__total'>
-      <h3>
-        Price: ${products.reduce((sum, i) => (sum += i.count * i.price), 0)}
+    <fieldset>
+      <legend>SubTotal</legend>
+      <h3 className='pc__price'>
+        ${products.reduce((sum, i) => (sum += i.count * i.price), 0)}
       </h3>
-    </div>
     </fieldset>
+    </div>
   );
 
   export default Total;

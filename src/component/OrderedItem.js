@@ -22,7 +22,7 @@ const Ordered = (props) => (
                   Qty
                 </th>
                 <th>
-                  <i class='fas fa-dollar-sign'></i>
+                  <i class='fas fa-dollar-sign'></i> ea.
                 </th>
               </tr>
             </thead>

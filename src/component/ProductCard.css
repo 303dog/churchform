@@ -1,108 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input.pc__input[type=text] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
 
+  legend, .pc__price {
+      text-align: center;
+  }
 
-.pc__container {
-    background-color: rgb(127, 186, 245);
-    border: 6px solid #ad0000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(3px + 2vmin);
-    color: white;
-}
+  .pc__price {
+      font-weight: 500;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
 
-fieldset {
+  fieldset {
     border-width: 10px ;
     border-color: #ad0000;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: .25%;
     position: center;
-}
-
-
-legend {
-    color: #ffff;
-    font-size: calc(11px + 2vmin);
-}
-
-.auto__main {
-    content: center;
-    border-radius: 2px;
-    background-color: #103c7f;
-    border: 8px solid #ad0000;
-    padding: 1%;
-    width: auto;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: .25%;
+  }
+  
+  .auto__container, .pc__total {
+    border-radius: 5px;
+    background-color: #103C7F;
+    padding: 20px;
     color: white;
-}
-
-
-button {
-    display: justify;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.pc__total {
-    content: center;
-    
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-size: calc(7px + 1.5vmin);
-}
-
-.pc__col25 {
-    float: center;
-    margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
-}
-
-.pc__col75 {
-    float: center;
-    margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
-}
-
-input.pc__input {
-    float: center;
-    margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
-}
-
-label {
-    float: center;
-    margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 1%;
-}
-
-.pc__row {
-    content: justify;
+  }
+  
+  .pc__col25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .pc__col75 {
+    float: left;
     width: 75%;
-    width: auto;
-    height: auto;
-    color: white;
-}
-
-form {
-    column-count: 2;
-    display: center;
-}
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .pc__row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .pc__col25, .pc__col75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
