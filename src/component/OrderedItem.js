@@ -28,10 +28,10 @@ const Ordered = (props) => (
             </thead>
             {props.products.map((item, i) => (
               <tr key={i}>
-                <td>{item.title}</td>
-                <td className='order__select'>{item.size}</td>
-                <td className='order__select'>{item.count}</td>
-                <td className='order__select'>{item.price}</td>
+                <td className='order__selectS'>{item.title}</td>
+                <td className='order__selectT'>{item.size}</td>
+                <td className='order__selectB'>{item.count}</td>
+                <td className='order__selectR'>{item.price}</td>
               </tr>
             ))}
           </table>

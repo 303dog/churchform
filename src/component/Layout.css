@@ -42,3 +42,51 @@ body {
   padding: 1px; 
   text-align: left; 
 }
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+    margin: 0%;
+    text-align: center;
+	}
+
+  #product__application {
+    background-color: rgb(112, 112, 115);
+  }
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+  #product__td1 { 
+    text-align: center;
+    border-color: #111e56;
+    background-color: #103c7f;
+    color: white;
+	}
+
+  #product__td2 { 
+    text-align: center;
+    background-color: #ad0000;
+    border-color: #800202;
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+
+
+}

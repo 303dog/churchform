@@ -7,15 +7,19 @@ table,
 th,
 td,
 tr {
-  border: 3px solid #111e56;
+  border: 4px solid #111e56;
+  border-collapse: collapse;
 }
 
 td {
   text-align: left;
 }
 
-.order__select {
-    text-align: center;
+.order__select,
+.order__selectR,
+.order__selectB,
+.order__selectT {
+  text-align: center;
 }
 
 table {
@@ -42,7 +46,82 @@ thead th:nth-child(4) {
 
 .order__container {
   border-radius: 5px;
-  background-color: #103C7F;
+  background-color: #103c7f;
   padding: 20px;
   color: white;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+    margin-bottom: 1%;
+  }
+
+  table {
+    margin: 0%;
+    border: 3px solid #ad0000;
+    background-color: rgb(112, 112, 115);
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 3px solid white;
+    border-radius: 1%;
+    margin: 5%;
+  }
+
+  .order__select,
+  .order__selectR,
+  .order__selectB,
+  .order__selectT,
+  .order__selectS {
+    /* Behave  like a "row" */
+    border-bottom: 1px solid rgb(112, 112, 115);
+    border-top: 1px solid rgb(112, 112, 115);
+    border-left: 1px solid rgb(112, 112, 115);
+    border-right: 1px solid rgb(112, 112, 115);
+    position: relative;
+    padding-left: 1%;
+    text-align: center;
+    background-color: rgb(112, 112, 115);
+    font-weight: bold;
+    border-radius: 4%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .order__selectR {
+    display: none;
+  }
+
+  .order__selectB::after {
+    text-align: center;
+    border-top: 1px solid rgb(112, 112, 115);
+    content: " qty";
+  }
+
+  .order__selectT {
+    border-top: 1px solid rgb(112, 112, 115);
+    border-bottom: 1px solid rgb(112, 112, 115);
+    background-color: rgb(112, 112, 115);
+  }
 }

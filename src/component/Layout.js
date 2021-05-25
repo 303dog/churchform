@@ -43,24 +43,24 @@ export default function Layout() {
           <th id='product__th'> APPLICATION</th>
         </tr>
         <tr id='product__tr'>
-          <td id='product__td'> Apparel</td>
-          <td id='product__td'> Embroidery, applique attachment, Label</td>
+          <td id='product__td2'> Apparel</td>
+          <td id='product__td2'> Embroidery, applique attachment, Label</td>
         </tr>
         <tr id='product__tr'>
-          <td id='product__td'>Consumer Goods</td>
-          <td id='product__td'> Label attachment</td>
+          <td id='product__td1'>Consumer Goods</td>
+          <td id='product__td1'> Label attachment</td>
         </tr>
         <tr id='product__tr'>
-          <td id='product__td'>Furniture</td>
-          <td id='product__td'> Label attachment</td>
+          <td id='product__td2'>Furniture</td>
+          <td id='product__td2'> Label attachment</td>
         </tr>
         <tr id='product__tr'>
-          <td id='product__td'>Textiles</td>
-          <td id='product__td'> Label attachments, non-fray applications</td>
+          <td id='product__td1'>Textiles</td>
+          <td id='product__td1'> Label attachments, non-fray applications</td>
         </tr>
         <tr id='product__tr'>
-          <td id='product__td'>Woodworking</td>
-          <td id='product__td'> Vinyl overlays</td>
+          <td id='product__td2'>Woodworking</td>
+          <td id='product__td2'> Vinyl overlays</td>
         </tr>
       </table>
       <section className='layout__section'>
