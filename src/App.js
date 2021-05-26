@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
 import Layout from "./component/Layout";
 import NavBar from "./component/NavBar";
@@ -19,7 +19,9 @@ function App() {
         <Route path='/request' component={RequestForm} />
         <Route path='/payment' component={Payment} />
         <Route path='/upload' component={Upload} />
+        <Route exact path="/pay" component={() => <Redirect to={{ pathname: "https://www.alliedprintdesign.com/payment-information/" }} />} />
       </Switch>
+      
     </Router>
   );
 }

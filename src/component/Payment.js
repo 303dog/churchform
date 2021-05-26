@@ -1,33 +1,16 @@
-import React from "react";
-import "./Payment.css";
+import React, { useEffect } from "react";
 
-class Payment extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: "",
-      quantity: "",
-      price: "",
-      shipping: "",
-    };
-  }
+function Payment() {
 
-goPay(e){
-  return(
-      <a href='https://codepen.io/shirakha/pen/LYVyMVK'/>
-  )
-}
+  useEffect(() => {
+    window.location.href = "https://www.alliedprintdesign.com/payment-information/";
+  }, []);
 
-  render() {
-    const e = this.state.cost;
-    return (
-      <>
-        <div className='payment__row'>
-          <button onClick={this.goPay(e)}>Go to Payment and CheckOut</button>
-        </div>
-      </>
-    );
-  }
+  return (
+    <div>
+      <h2>Payment</h2>
+    </div>
+  );
 }
 
 export default Payment;

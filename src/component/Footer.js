@@ -11,7 +11,7 @@ class Footer extends React.Component {
               <div className='upper'>
                 <div className='topic'>About us</div>
                 <p>
-                  irononcarpetlabels.com is an affiliate of Allied Print &
+                  irononcarpetlabels.com is a subsidiary of Allied Print &
                   Design.
                 </p>
                 <p>6833 N 21st Avenue</p>

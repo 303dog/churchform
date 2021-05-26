@@ -1,88 +1,63 @@
-import React, { useState } from "react";
-import "./RequestForm.css";
-import Upload from "./Upload";
+import React from 'react'
+import './RequestForm.css'
 
-export default function RequestForm() {
-  const [name, setName] = useState("");
-  const [status, setStatus] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
-  const encode = (data) => {
-    const formData = new FormData();
-    Object.keys(data).forEach((k) => {
-      formData.append(k, data[k]);
-    });
-    return formData;
-  };
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
-  const handleSubmit = (e) => {
-    const data = { "form-name": "contact", name, email, message };
+class RequestForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
 
+  /* Here’s the juicy bit for posting the form submission */
+
+  handleSubmit = e => {
     fetch("/", {
       method: "POST",
-      // headers: { "Content-Type": 'multipart/form-data; boundary=random' },
-      body: encode(data),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => setStatus("Form Submission Successful!!"))
-      .catch((error) => setStatus("Form Submission Failed!"));
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
     e.preventDefault();
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    if (name === "name") {
-      return setName(value);
-    }
-    if (name === "email") {
-      return setEmail(value);
-    }
-    if (name === "message") {
-      return setMessage(value);
-    }
-  };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
-  return (
-    <>
+  render() {
+    const { name, email, message } = this.state;
+    return (
       <div className='request__container'>
-        <fieldset>
+          <fieldset>
           <legend>Contact Us!</legend>
-          <form onSubmit={handleSubmit} action='/thank-you/'>
-            <div className='request__row'>
-              <label>Name:</label>
-            </div>
-            <input
-              className='request__input'
-              type='text'
-              name='name'
-              value={name}
-              onChange={handleChange}
-            />
-            <div className='request__row'>
-              <label>Email:</label>
-            </div>
-            <input
-              className='request__input'
-              type='email'
-              name='email'
-              value={email}
-              onChange={handleChange}
-            />
-            <div className='request__row'>
-              <label>Message:</label>
-              <textarea
-                className='request__input'
-                name='message'
-                value={message}
-                onChange={handleChange}
-              />
-            </div>
-          </form>
-          <h5>{status}</h5>
+          <form onSubmit={this.handleSubmit}>
+          <label>
+            Your Name: <input className='request__input'  type="text" name="name" value={name} onChange={this.handleChange} />
+          </label>
+        <p>
+          <label>
+            Your Email: <input className='request__input' type="email" name="email" value={email} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
         </fieldset>
-      </div>
-      <Upload />
-    </>
-  );
+        </div>
+    );
+  }
 }
+
+export default RequestForm;
