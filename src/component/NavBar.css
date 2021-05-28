@@ -2,22 +2,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 .nav__header {
   width: 100%;
+  padding: auto;
 }
 
-.nav__brand{
+.allied__logo {
+  display: flex;
+  float: left;
+  width: 5%;
+  height: 5%;
+  margin: 0%;
+}
+
+.nav__title {
+  text-align: center;
+  font-size: calc(100% + 0.1vmin);
+  font-family: "Staatliches";
+  color: #111e56;
+  margin-right: 5%;
+}
+
+.nav__brand {
   text-align: center;
   font-size: calc(100% + 2vmin);
-  font-family: 'Staatliches';
-  color:#111E56 ;
-  border:5px solid #ad0000;
+  font-family: "Staatliches";
+  color: #111e56;
+  border: 5px solid #ad0000;
 }
 
 .nav__main {
-  
   border: 5px solid #103c7f;
   font-family: "Jost";
   display: flex;
@@ -37,17 +53,17 @@
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: #103C7F;
+  color: #103c7f;
 }
 .nav__form {
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: #103C7F;
+  color: #103c7f;
 }
 
 .nav__form:hover {
-  background-color:  rgba(195, 207, 224, 0.774);
+  background-color: rgba(195, 207, 224, 0.774);
   border-radius: 50%;
 }
 
@@ -55,7 +71,7 @@
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: #103C7F;
+  color: #103c7f;
 }
 
 .nav__request:hover {
@@ -66,15 +82,15 @@
   margin: 0.4%;
   padding: 1%;
   background: ghostwhite;
-  color: #103C7F;
+  color: #103c7f;
 }
 
 .nav__payment:hover {
-  background-color:  rgba(195, 207, 224, 0.774);
+  background-color: rgba(195, 207, 224, 0.774);
   border-radius: 50%;
 }
 
 .nav__home:hover {
-  background-color:  rgba(195, 207, 224, 0.774);
+  background-color: rgba(195, 207, 224, 0.774);
   border-radius: 50%;
 }

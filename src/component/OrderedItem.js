@@ -13,16 +13,16 @@ const Ordered = (props) => (
             <thead>
               <tr>
                 <th>
-                  <i class='fas fa-palette'></i>
+                  <i className='fas fa-palette'></i>
                 </th>
                 <th>
-                  <i class='fas fa-ruler-combined'></i>
+                  <i className='fas fa-ruler-combined'></i>
                 </th>
                 <th>
                   Qty
                 </th>
                 <th>
-                  <i class='fas fa-dollar-sign'></i> ea.
+                  <i className='fas fa-dollar-sign'></i> ea.
                 </th>
               </tr>
             </thead>

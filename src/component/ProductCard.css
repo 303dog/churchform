@@ -1,23 +1,28 @@
 * {
     box-sizing: border-box;
   }
+
+  img.alli2ed__logo {
+    display: block;
+    position: center;
+    width: 20%;
+    height: 20%;
+  }
   
-  input[type=text], select, textarea {
+  input[type=text] {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
   
   label {
-    padding: 12px 12px 12px 0;
+    padding: 0px 12px 1px 0;
     display: inline-block;
   }
   
   input.pc__input[type=text] {
     padding: 12px 20px;
-    border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
@@ -25,27 +30,54 @@
 
   legend, .pc__price {
       text-align: center;
+      font-size: x-large;
   }
 
-  .pc__price {
+  .pc__price, .pc__price{
       font-weight: 500;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #87a789;
   }
 
   fieldset {
-    border-width: 10px ;
-    border-color: #ad0000;
+    border-width: 8px ;
+    border-color: #fcf9f9;
     position: center;
+    display: relative;
+    padding: .5%;
   }
   
-  .auto__container, .pc__total {
-    border-radius: 5px;
-    background-color: #103C7F;
-    padding: 20px;
+  .auto__container {
+    display: relative;
+    border-radius: 1px;
+    background-color: #103c7f;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     color: white;
+    border: 8px solid #989caf;
+    border-style: groove;
+    
+  }
+
+  .pc__total {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #103c7f;
+    border: 8px solid #989caf;
+    border-style: groove;
+    color: white;
+  }
+
+  .auto__container {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   .pc__col25 {
@@ -66,11 +98,26 @@
     display: table;
     clear: both;
   }
+
+ 
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px), (min-device-width: 768px) and (max-device-width: 1024px)  {
     .pc__col25, .pc__col75, input[type=submit] {
       width: 100%;
       margin-top: 0;
+    }
+
+    label {
+      text-align: center;
+      padding: 10px 1px 10px 5px;
+    }
+
+    .pc__total {
+      margin: 0%;
+    }
+
+    .auto__container {
+      margin: 0%;
     }
   }

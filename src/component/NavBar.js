@@ -5,7 +5,10 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <header className='nav_header'>
-      <h1 className='nav__brand'> irononcarpetlabels.com </h1>
+      <div className='nav__brand'>
+      <img className='allied__logo' src='https://www.alliedprintdesign.com/wp-content/uploads/2015/03/logo-allied-print-design.png' alt="logo" />
+      <h1 className='nav__title'>irononcarpetlabels.com </h1>
+      </div>
       <div className='nav__div'>
         <nav className='nav__main'>
           <NavLink
@@ -19,21 +22,21 @@ export default function NavBar() {
             to='/order'
             className='nav__form'
           >
-            <i class="fas fa-store"></i>
+            <i className="fas fa-store"></i>
             {" "}
           </NavLink>
           <NavLink
             to='/request'
             className='nav__request'
           >
-            <i class="fas fa-comment-dots"></i>
+            <i className="fas fa-comment-dots"></i>
             {" "}
           </NavLink>
           <NavLink
             to='/payment'
             className='nav__payment'
           >
-            <i class="fas fa-shopping-cart"></i>
+            <i className="fas fa-shopping-cart"></i>
             {" "}
           </NavLink>
         </nav>

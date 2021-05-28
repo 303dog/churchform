@@ -7,8 +7,8 @@ function Payment() {
   }, []);
 
   return (
-    <div>
-      <h2>Payment</h2>
+    <div className='redirect__pay'>
+      <h2>You are being redirected to our Payment Portal on our parent site</h2>
     </div>
   );
 }

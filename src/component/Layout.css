@@ -1,5 +1,10 @@
 body {
   background-color: rgba(235, 238, 243, 0.774);
+  
+}
+
+li, ul {
+  margin-left: 1%;
 }
 
 .layout__container {
@@ -19,74 +24,79 @@ body {
   padding: 0.5%;
 }
 
-#product__application { 
-  width: 50%; 
+#product__application {
+  width: 50%;
   margin-left: 25%;
   margin-right: 25%;
-  border-collapse: collapse; 
-  border: 2px solid #103c7f;
+  border-radius: 1px;
+  padding: auto;
+  border-collapse: collapse;
+  border: 8px solid #989caf;
+  border-style: groove;
 }
 /* Zebra striping */
-#product__tr:nth-of-type(even) { 
-  background: #ad0000; 
+#product__tr:nth-of-type(even) {
+  background: #ad0000;
   color: white;
 }
-#product__th { 
-  background: #103c7f; 
-  color: white; 
-  font-weight: bold; 
+
+#product__th {
+  background: #103c7f;
+  color: white;
+  font-weight: bold;
   text-align: center;
 }
 
-#product__td { 
-  padding: 1px; 
-  text-align: left; 
+#product__td {
+  padding: 1px;
+  text-align: left;
 }
 
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
     margin: 0%;
     text-align: center;
-	}
+  }
 
   #product__application {
     background-color: rgb(112, 112, 115);
+    position: justify;
   }
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-  #product__td1 { 
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #product__td1 {
     text-align: center;
     border-color: #111e56;
     background-color: #103c7f;
     color: white;
-	}
+  }
 
-  #product__td2 { 
+  #product__td2 {
     text-align: center;
     background-color: #ad0000;
     border-color: #800202;
-	}
-	
-	td:before { 
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
+  }
 
-
-
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
 }

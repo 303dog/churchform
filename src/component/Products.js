@@ -58,7 +58,7 @@ class Products extends React.Component {
     {this.state.products.reduce((product, id) => (
      <div key={id}>
        <label>{product.title}</label>
-       {this.state.products.map(product => { product.title > 0 && product.map((item, id) => (
+       {this.state.products.forEach(product => { product.title > 0 && product.map((item, id) => (
          <li key={id}>{item.count}</li>
          ))})}
      </div>

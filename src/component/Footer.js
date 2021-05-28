@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 
+
 class Footer extends React.Component {
   render() {
     return (
@@ -11,7 +12,8 @@ class Footer extends React.Component {
               <div className='upper'>
                 <div className='topic'>About us</div>
                 <p>
-                  irononcarpetlabels.com is a subsidiary of Allied Print &
+                  irononcarpetlabels.com<br/>
+                  is a subsidiary of Allied Print &
                   Design.
                 </p>
                 <p>6833 N 21st Avenue</p>
@@ -23,12 +25,12 @@ class Footer extends React.Component {
                 <div className='topic'>Contact us</div>
                 <div className='phone'>
                   <a href='#'>
-                    <i class='fas fa-phone-volume'></i>1 602 995 4888
+                    <i className='fas fa-phone-volume'></i>1 602 995 4888
                   </a>
                 </div>
                 <div className='email'>
                   <a href='#'>
-                    <i class='fas fa-envelope'></i>
+                    <i className='fas fa-envelope'></i>
                     graphics@alliedprintdesign.com{" "}
                   </a>
                 </div>
@@ -53,25 +55,23 @@ class Footer extends React.Component {
               </div>
             </div>
             <div className='right box'>
-              <div className='topic'>Subscribe us</div>
+              <div className='topic'>Follow Us</div>
 
               <div className='media-icons'>
                 <a href='https://www.facebook.com/AlliedPrintDesign/?fref=ts'>
-                  <i class='fab fa-facebook-f'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-instagram'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-twitter'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-youtube'></i>
-                </a>
-                <a href='#'>
-                  <i class='fab fa-linkedin-in'></i>
+                  <i className='fab fa-facebook-f'></i>
                 </a>
               </div>
+              <div className='footer__cheap'>
+                <a href='https://cheapcarbonlessprinting.com/'>
+                  <img className='footer__logo' src='https://cheapcarbonlessprinting.com/wp-content/uploads/2020/04/ccp-logo.png' alt="sister company" />
+                </a>
+                </div>
+                <div className='footer__allied'>
+                <a href='https://www.alliedprintdesign.com/'>
+                  <img className='footer__logo' src='https://www.alliedprintdesign.com/wp-content/uploads/2015/03/logo-allied-print-design.png' alt="sister company" />
+                </a>
+                </div>
             </div>
           </div>
           <div className='bottom'>

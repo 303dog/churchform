@@ -37,25 +37,28 @@ class RequestForm extends React.Component {
           <fieldset>
           <legend>Contact Us!</legend>
           <form onSubmit={this.handleSubmit}>
-          <label>
+          <div className='request__row'>
+          <label className='request__label'>
             Your Name: <input className='request__input'  type="text" name="name" value={name} onChange={this.handleChange} />
           </label>
         <p>
-          <label>
+          <label className='request__label'>
             Your Email: <input className='request__input' type="email" name="email" value={email} onChange={this.handleChange} />
           </label>
         </p>
         <p>
-          <label>
+          <label className='request__label'>
             Message: <textarea name="message" value={message} onChange={this.handleChange} />
           </label>
         </p>
         <p>
           <button type="submit">Send</button>
         </p>
+
+        </div>
       </form>
         </fieldset>
-        </div>
+      </div>
     );
   }
 }

@@ -1,76 +1,5 @@
-
-.request__input[type=text] {
-  width:  90%;
-  border: 5px solid #103C7F;
-  border-radius: 4px;
+* {
   box-sizing: border-box;
-  resize: vertical;
-}
-
-textarea, label {
-  border-radius: 4px;
-  width:  80%;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-legend {
-  color: white;
-  font-family: 'Mukta';
-  font-weight: bold;
-  font-size: 29px;
-}
-
-.request__row {
-  content: flex;
-}
-
-.icon {
-  font-size: 20px; 
-  color: greenyellow;
-}
-.request__input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-.upload__container {
-  display: center;
-  content: center;
-  padding: 10px;
-  width: 375px;
-}
-h5 {
-  content: justify;
-  
-}
-
-img {
-  content: justify;
-  width: 23%;
-  margin-right: 1%;
-  margin-left: 1%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding: 1px;
-}
-
-.request__container {
-  content: justify;
-  border-radius: 5px;
-  background-color: #103C7F;
-  padding: 10px;
-  width: 375px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: .25%;
-  color: white;
 }
 
 .request__row:after {
@@ -79,9 +8,82 @@ img {
   clear: both;
 }
 
-@media screen and (max-width: 600px) {
-  .request__input[type=submit] {
+.request__container {
+  display: inline-block;
+  border-radius: 1px;
+  background-color: #103c7f;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: white;
+  border: 8px solid #989caf;
+  border-style: groove;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+input.input__request[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input.request__input[type="text"],[type="email"], textarea {
+  padding: 5px 21px;
+  border-radius: 1px;
+  cursor: pointer;
+  float: justify;
+  resize: vertical;
+}
+
+.request__main {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border-radius: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: #103c7f;
+  border: 8px solid #989caf;
+  border-style: groove;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.request__label {
+  padding: 0px 12px 10px 0;
+  display: inline-block;
+}
+
+.reque7st__input {
+  display: flex;
+}
+
+@media screen and (max-width: 600px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  .request__container,
+  .request__input, textarea {
     width: 100%;
-    margin-top: 0;
+    margin: 0%;
+  }
+
+  .request__label {
+    text-align: center;
+    padding: 10px 1px 10px 5px;
+  }
+
+  .request__row {
+    text-align: center;
+  }
+
+  .request__main {
+    margin: 0%;
   }
 }
