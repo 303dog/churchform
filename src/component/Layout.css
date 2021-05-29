@@ -11,7 +11,7 @@ li, ul {
   content: right;
   text-align: justify;
   padding: auto;
-  margin: auto;
+  margin: 15px 15px 5px 15px;
 }
 
 .layout__section {
