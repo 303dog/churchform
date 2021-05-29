@@ -2,9 +2,16 @@
     box-sizing: border-box;
   }
 
+  button {
+    display: block;
+    content: center;
+    margin: auto;
+  }
+
   img.alli2ed__logo {
     display: block;
     position: center;
+    margin: auto;
     width: 20%;
     height: 20%;
   }
@@ -14,6 +21,7 @@
     padding: 12px;
     border-radius: 4px;
     resize: vertical;
+    font-weight: bold;
   }
   
   label {

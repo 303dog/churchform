@@ -5,6 +5,9 @@ export default function Layout() {
   return (
     <div className='layout__container'>
       <article className='layout__article'>
+        Thank you for choosing irononcarpetlabels.com!  We specialize in one product, carpet labels. We offer several different sizes in two different formats. Orders can be filled with either or a combination of our standard black & white/ grayscale format or our full-color format. We offer the ability to add your custom logos as well as custom size labels.
+      </article>
+      <article className='layout__article'>
         Heat Seal Adhesive Coatings Heat Activated adhesive coatings are also
         known as hot-melt coatings or thermo-sensitive coatings.
         Irononcarpetlabels.com can coat paper, textiles or a wide range of

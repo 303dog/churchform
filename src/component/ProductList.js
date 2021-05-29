@@ -21,6 +21,7 @@ const ProductList = ({ products, onChange }) => (
               </div>
               ))}
               </div>
+             
         </form>
       </fieldset>
     </div>

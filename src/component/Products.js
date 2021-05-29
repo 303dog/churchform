@@ -78,7 +78,7 @@ class Products extends React.Component {
             <Total products={this.state.products} />
             <Ordered
             products={this.state.products.filter((item) => item.count > 0)} />
-            <button onClick={this.onSubmit}>Submit</button>
+           <button onClick={this.onSubmit}>Submit</button>
           </div>
         </>
       );
