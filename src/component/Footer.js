@@ -29,7 +29,7 @@ class Footer extends React.Component {
                   </a>
                 </div>
                 <div className='email'>
-                  <a href='#'>
+                  <a href='mailto:graphics@alliedprintdesign.com?subject=Custom Request from irononcarpetlabels.com&body=Please be as detailed as possible. Include the size you are needing and if you have a custome logo, please be sure to attach the file'>
                     <i className='fas fa-envelope'></i>
                     graphics@alliedprintdesign.com{" "}
                   </a>

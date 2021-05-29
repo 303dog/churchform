@@ -1,4 +1,5 @@
 import React from 'react'
+import Mailto from './Mailto'
 import './RequestForm.css'
 
 
@@ -36,25 +37,28 @@ class RequestForm extends React.Component {
       <div className='request__container'>
           <fieldset>
           <legend>Contact Us!</legend>
-          <form onSubmit={this.handleSubmit}>
+          <form action='mailto:graphics@alliedprintdesign.com' method='get' enctype='text/plain'>
           <div className='request__row'>
-          <label className='request__label'>
+          <label HTMLfor='name' className='request__label'>
             Your Name: <input className='request__input'  type="text" name="name" value={name} onChange={this.handleChange} />
           </label>
         <p>
-          <label className='request__label'>
+          <label HTMLfor='email' className='request__label'>
             Your Email: <input className='request__input' type="email" name="email" value={email} onChange={this.handleChange} />
           </label>
         </p>
         <p>
-          <label className='request__label'>
+          <label HTMLfor='message' className='request__label'>
             Message: <textarea name="message" value={message} onChange={this.handleChange} />
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
         </p>
-
+        <Mailto email="graphics@alliedprintdesign.com" subject="Hello" body="Hello world!">
+    Mail me!
+  </Mailto>
         </div>
       </form>
         </fieldset>
