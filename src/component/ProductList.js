@@ -14,7 +14,7 @@ const ProductList = ({ products, onChange }) => (
               <div className='pc__col75'></div>
               <input
                 className='pc__input'
-                type='text'
+                type='number'
                 value={product.count}
                 onChange={(e) => onChange(i, parseInt(e.target.value) || 0)}
                 />
