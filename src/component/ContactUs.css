@@ -72,6 +72,7 @@
     .request__input, textarea {
       width: 100%;
       margin: 0%;
+      
     }
   
     .request__label {
@@ -82,9 +83,11 @@
     .request__row {
       text-align: center;
     }
-  
-    .requestQ__main {
-      margin: 0%;
+
+    .request__container {
+      margin-top: 10%;
+      margin-bottom:10%;
     }
+
   }
   
