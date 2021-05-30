@@ -4,7 +4,8 @@ import NavBar from "./component/NavBar";
 import Payment from "./component/Payment";
 import Footer from './component/Footer';
 import ProductCard from "./component/ProductCard";
-import RequestForm from "./component/RequestForm";
+import ContactUs from "./component/ContactUs";
+import emailjs from "emailjs-com"
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Layout} />
         <Route path='/order' component={ProductCard} />
-        <Route path='/request' component={RequestForm} />
+        <Route path='/request' component={ContactUs} />
         <Route path='/payment' component={Payment} />
         <Route exact path="/pay" component={() => <Redirect to={{ pathname: "https://www.alliedprintdesign.com/payment-information/" }} />} />
       </Switch>
