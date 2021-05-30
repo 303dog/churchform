@@ -34,6 +34,12 @@ class Footer extends React.Component {
                     graphics@alliedprintdesign.com{" "}
                   </a>
                 </div>
+                <div className='topic'>General</div>
+                <div>
+                <a href='https://www.alliedprintdesign.com/privacy-policy'>
+                  Privacy Policy
+                </a>
+              </div>
               </div>
             </div>
             <div className='middle box'>
@@ -51,6 +57,10 @@ class Footer extends React.Component {
               <div>
                 <a href='https://www.alliedprintdesign.com/get-estimate/'>
                   Estimate Request
+                </a>
+              </div>
+              <div>
+                <a href='https://www.yelp.com/biz/allied-print-and-design-phoenix?utm_medium=biz_embedded_content&utm_source=biz_badge'>
                 </a>
               </div>
             </div>
@@ -76,7 +86,7 @@ class Footer extends React.Component {
           </div>
           <div className='bottom'>
             <p>
-              Copyright © 2021 <a href='#'>303dog</a> All rights reserved
+              Copyright © 2021 <a href='#'>Allied Print & Design.</a> All rights reserved
             </p>
           </div>
         </footer>
