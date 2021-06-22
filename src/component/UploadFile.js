@@ -42,7 +42,7 @@ class UploadFile extends Component {
       );
     } else {
       return (
-        <div>
+        <div className='upload__title'>
           <br />
           <h4>Choose before Pressing the Upload button</h4>
         </div>
@@ -52,12 +52,12 @@ class UploadFile extends Component {
 
   render() {
     return (
-      <div>
-        <h1></h1>
+      <div className='upload__container'>
+      
         <h3>File Upload</h3>
         <div>
           <input type='file' onChange={this.onFileChange} />
-          <button onClick={this.onFileUpload}{Checkout}>Upload!</button>
+          <button onClick={this.onFileUpload}>Upload!</button>
         </div>
         {this.fileData()}
       </div>

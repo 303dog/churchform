@@ -57,6 +57,9 @@ export default function ContactUs() {
                 Message: <textarea cols='20' rows='10'maxlength='500' name='message' placeholder='including details such as sizes and quantities will help us help you faster' />
               </label>
             </p>
+            <label>Attach file:</label>
+    <input type="file" name="my_file"/> 
+    <input type="submit" value="Submit"/>
             <p>
               <input type='submit' name='submit' />
               <input type='reset' name='reset' />

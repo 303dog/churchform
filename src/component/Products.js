@@ -2,6 +2,7 @@ import React from 'react';
 import ProductList from './ProductList';
 import Total from './Total';
 import Ordered from './OrderedItem'
+import UploadFile from './UploadFile'
 
 
 
@@ -75,6 +76,7 @@ class Products extends React.Component {
               products={this.state.products}
               onChange={this.onChange}
             />
+             <UploadFile />
             <Total products={this.state.products} />
             <Ordered
             products={this.state.products.filter((item) => item.count > 0)} />
