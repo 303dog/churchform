@@ -4,6 +4,37 @@ import "./Layout.css";
 export default function Layout() {
   return (
     <div className='layout__container'>
+        <div className="polaroid">     
+         <img src="/image001.jpg" alt='image' />
+      <div className='all_images'>
+        <p>I am just uploading pics, we can discuss format</p>
+      </div>
+      </div>
+      <div className="polaroid">     
+         <img src="/image002.jpg" alt='image' />
+      <div className='all_images'>
+        <p>Full Color</p>
+      </div>
+      </div>
+      <div className="polaroid">     
+         <img src="/image003.jpg" alt='image' />
+      <div className='all_images'>
+        <p>Full Color</p>
+      </div>
+      </div>
+      <div className="polaroid">     
+         <img src="/image004.jpg" alt='image' />
+      <div className='all_images'>
+        <p>Full Color</p>
+      </div>
+      </div>
+      <div className="polaroid">     
+         <img src="/image005.jpg" alt='image' />
+      <div className='all_images'>
+        <p>Full Color</p>
+      </div>
+      </div>
+
       <article className='layout__article'>
         Thank you for choosing irononcarpetlabels.com!  We specialize in one product, carpet labels. We offer several different sizes in two different formats. Orders can be filled with either or a combination of our standard black & white/ grayscale format or our full-color format. We offer the ability to add your custom logos as well as custom size labels.
       </article>
