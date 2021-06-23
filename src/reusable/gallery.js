@@ -35,14 +35,19 @@ const images = [
 
 class MyGallery extends React.Component {
 
-
+  
 
   render() {
     return (
     
     <ImageGallery 
-    items={images} 
-    originalHeight={images}
+    items={images}
+    autoPlay={true}
+    thumbnailPosition='bottom'
+    useBrowserFullscreen={false}
+    showPlayButton={false}
+  
+
     />
 
     )

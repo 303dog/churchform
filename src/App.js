@@ -14,6 +14,8 @@ function App() {
     <Router>
       <NavBar />
       <MyGallery />
+      
+        
       <Switch>
         <Route exact path='/' component={Layout} />
         <Route path='/order' component={ProductCard} />

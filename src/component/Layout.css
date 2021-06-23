@@ -3,6 +3,10 @@ body {
   font-weight: 400;
 }
 
+p {
+  text-align: center ;
+}
+
 
 li, ul {
   margin-left: 1%;
