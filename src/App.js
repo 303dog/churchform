@@ -6,12 +6,14 @@ import Footer from './component/Footer';
 import ProductCard from "./component/ProductCard";
 import ContactUs from "./component/ContactUs";
 import emailjs from "emailjs-com"
+import MyGallery from './reusable/gallery'
 
 
 function App() {
   return (
     <Router>
       <NavBar />
+      <MyGallery />
       <Switch>
         <Route exact path='/' component={Layout} />
         <Route path='/order' component={ProductCard} />

@@ -15,26 +15,17 @@
   width: 5%;
   height: 5%;
   margin-left: 10%;
+}
+
+.carpet__logo {
+  width: 20%;
+  height: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
   
 }
 
-.nav__title {
-  text-align: center;
-  font-size: calc(100% + 0.1vmin);
-  font-family: "Jost";
-  background-color: #111e56;
-  color: ghostwhite;
-  padding-right: 17%;
-}
-
-.nav__brand {
-  text-align: center;
-  font-size: calc(100% + 2vmin);
-  font-family: "Staatliches";
-  color: #111e56;
- 
-  
-}
 
 .nav__main {
   border: 5px solid #103c7f;
@@ -43,13 +34,13 @@
   padding: 0;
   margin-bottom: 1%;
   background-color: #103c7f;
-  color: ghostwhite;
+  color: white;
 }
 
 .nav__div {
   margin: 0;
   padding: 0;
-  background: ghostwhite;
+  background: white;
   position: sticky;
 }
 

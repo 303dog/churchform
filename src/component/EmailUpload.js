@@ -1,10 +1,11 @@
 import React from 'react'
+import emailjs from "emailjs-com";
 
 
-function formSubmit(event) {
-    event.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this);
-
+export default function formSubmit() {
+    function sendEmail(e) {
+    emailjs.sendForm('service_zx7pmmb', 'template_6jdyjx8', this);
+    }
 
 return(
     <div className='auto__container'>

@@ -1,0 +1,8 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+.gallery__images {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
