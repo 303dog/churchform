@@ -4,9 +4,13 @@ body {
 }
 
 p {
-  text-align: center ;
+  text-align: left ;
 }
 
+.p__lead {
+  text-align: center;
+  font-weight: 500;
+}
 
 li, ul {
   margin-left: 1%;

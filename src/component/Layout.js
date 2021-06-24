@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./Layout.css";
 
 export default function Layout() {
@@ -6,7 +7,7 @@ export default function Layout() {
     <div className='layout__container'>
 
       <article className='layout__article'>
-       <p> Thank you for choosing irononcarpetlabels.com!</p>
+       <p className='p__lead'> Thank you for choosing irononcarpetlabels.com!</p>
          <p>  We specialize in one product, carpet labels.
          We offer several different sizes in two different formats. 
            Orders can be filled with either or a combination of our standard Black & White format or our Full-Color format. 
@@ -14,7 +15,7 @@ export default function Layout() {
             We offer several label sizes and can offer custom sizes if needed.
        </p></article>
       <article className='layout__article'>
-        Heat Seal Adhesive Coatings Heat Activated adhesive coatings are also
+       <p> Heat Seal Adhesive Coatings Heat Activated adhesive coatings are also
         known as hot-melt coatings or thermo-sensitive coatings.
         Irononcarpetlabels.com can coat paper, textiles or a wide range of
         customer supplied substrates. Our precision equipment can deliver
@@ -26,6 +27,7 @@ export default function Layout() {
         our customers to provide them with innovative, custom solutions,
         Irononcarpetlabels.com does provide a range of standard substrate
         options to fit a wide variety of manufacturing needs. These include
+        </p>
         <ul>
           <li>Irononcarpetlabels.com All Purpose Paper</li>
           <li>
@@ -73,6 +75,7 @@ export default function Layout() {
         </tr>
       </table>
       <section className='layout__section'>
+        <p>
         EcoEffort At Irononcarpetlabels.com we appreciate the need for ourselves
         and our customers to be responsible members of our global community.
         That is why all of our EVA adhesives are environmentally benign and
@@ -89,6 +92,7 @@ export default function Layout() {
         heat seal label requires both heat and pressure to soften the adhesive,
         allowing it to penetrate the substrate. Upon cooling, this results in a
         stronger bond than is achievable with most pressure-sensitive labels.
+        </p>
         </section>
     </div>
   );
