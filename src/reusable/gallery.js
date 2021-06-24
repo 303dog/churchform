@@ -8,6 +8,10 @@ const images = [
     thumbnail: "logo003.JPG",
   },
   {
+    original: "color001.jpg",
+    thumbnail: "color001.jpg",
+  },
+  {
     original: "./image002.jpg",
     thumbnail: "./image002.jpg",
   },

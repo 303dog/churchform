@@ -27,9 +27,10 @@ function App() {
       <Link to='/contact' className='nav__form'>
         Contact Us
       </Link>
-
+      <Layout />
+      <ProductCard />
       <Switch>
-        <Route exact path='/' component={Layout} />
+        
         <Route path='/order' component={ProductCard} />
         <Route path='/request' component={ContactUs} />
         <Route path='/payment' component={Payment} />
