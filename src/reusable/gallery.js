@@ -38,23 +38,16 @@ const images = [
 ];
 
 class MyGallery extends React.Component {
-
-  
-
   render() {
     return (
-    
-    <ImageGallery 
-    items={images}
-    autoPlay={true}
-    thumbnailPosition='bottom'
-    useBrowserFullscreen={false}
-    showPlayButton={false}
-  
-
-    />
-
-    )
+      <ImageGallery
+        items={images}
+        autoPlay={true}
+        thumbnailPosition='bottom'
+        useBrowserFullscreen={false}
+        showPlayButton={false}
+      />
+    );
   }
 }
 
