@@ -9,7 +9,7 @@ class ProductCard extends React.Component {
 
   render() {
     return (
-      <div className='pc__container'>
+      <div className='pc__con9tainer'>
         <div className='pc__main'>
           <Products />
         </div>

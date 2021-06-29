@@ -29,24 +29,9 @@ function App() {
       </Link>
       <Layout />
       <ProductCard />
-      <Switch>
-        
-        <Route path='/order' component={ProductCard} />
-        <Route path='/request' component={ContactUs} />
-        <Route path='/payment' component={Payment} />
-        <Route
-          exact
-          path='/pay'
-          component={() => (
-            <Redirect
-              to={{
-                pathname:
-                  "https://www.alliedprintdesign.com/payment-information/",
-              }}
-            />
-          )}
-        />
-      </Switch>
+      <ContactUs />
+      
+      
       <Footer />
     </Router>
   );

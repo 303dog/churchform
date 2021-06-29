@@ -2,14 +2,14 @@
     box-sizing: border-box;
   }
   
-  .request__row:after {
+  .reques4t__row:after {
     content: "";
     display: table;
     clear: both;
   }
   
   .request__container {
-    display: inline-block;
+    display: relative;
     border-radius: 1px;
     background-color: #103c7f;
     padding-left: 20px;
@@ -18,10 +18,8 @@
     color: white;
     border: 4px solid #989caf;
     border-style: groove;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-left: 37%;
+    margin-right: 37%;
   }
   
   input.input__request[type=text], textarea {
@@ -39,7 +37,7 @@
     resize: vertical;
   }
   
-  .request__Qmain {
+  .request__9main {
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 5%;
@@ -60,10 +58,10 @@
   
   .request__label {
     padding: 0px 12px 10px 0;
-    display: inline-block;
+    display: center;
   }
   
-  .reque7st__input {
+  .request__input {
     display: flex;
   }
   
