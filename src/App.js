@@ -12,6 +12,7 @@ import NavBar from "./component/NavBar";
 import Payment from "./component/Payment";
 import ProductCard from "./component/ProductCard";
 import MyGallery from "./reusable/gallery";
+import Promo from './reusable/promo'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         Contact Us
       </Link>
       <Layout />
+      <Promo />
       <ProductCard />
       <ContactUs />
       

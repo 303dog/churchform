@@ -21,6 +21,8 @@ li, ul {
   text-align: justify;
   padding: auto;
   margin: 85px 15px 75px 15px;
+  border-bottom: 2px solid #ad0000;
+  border-top: 2px solid #ad0000;
 }
 
 .layout__section {

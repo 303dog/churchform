@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+   
   }
 
   .btn__checkout {
@@ -141,6 +142,10 @@
     border: 4px solid #989caf;
     border-style: groove;
     
+  }
+
+  .pc__mai5n {
+    background-color: #ad0000;
   }
 
   .pc__total {

@@ -4,8 +4,8 @@ import "./gallery.css";
 
 const images = [
   {
-    original: "logo003.JPG",
-    thumbnail: "logo003.JPG",
+    original: "logo02.png",
+    thumbnail: "logo02.png",
   },
   {
     original: "color001.jpg",
