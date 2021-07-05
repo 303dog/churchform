@@ -1,11 +1,17 @@
 .promo__main {
-    text-align: center;
-    font-weight: 900;
-    content: '\f007';
-
+    border: 3px solid #fff;
+    padding: 2px;
+    font-size: xx-large;
+    margin-left: 40%;
+    margin-right: 5%;
 }
 
-.promo__second {
+.promo__mc {
+    margin: inherit;
+    width: 8%;
+    float: left;
+    padding: 1px;
+    border: 5px solid #ad0000;
     text-align: center;
-
 }
+

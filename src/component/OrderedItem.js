@@ -5,6 +5,7 @@ import "./OrderedItem.css";
 //props from Products/usersOrder
 const Ordered = (props) => (
   <>
+  
     <div className='order__container'>
       <fieldset>
         <legend>Confirm Your Order</legend>

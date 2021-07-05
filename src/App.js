@@ -29,12 +29,12 @@ function App() {
         Contact Us
       </Link>
       <Layout />
-      <Promo />
       <ProductCard />
       <ContactUs />
       
       
       <Footer />
+    
     </Router>
   );
 }

@@ -21,18 +21,22 @@ li, ul {
   text-align: justify;
   padding: auto;
   margin: 85px 15px 75px 15px;
-  border-bottom: 2px solid #ad0000;
-  border-top: 2px solid #ad0000;
+  border-bottom: 6px solid #ad0000;
+  border-top: 6px solid #ad0000;
 }
 
 .layout__section {
-  margin: 1%;
+  margin: auto;
   padding: 0.5%;
+  margin-bottom: 5%;
+  margin-top:  4%;
 }
 
 .layout__article {
-  margin: 1%;
+  margin: auto;
   padding: 0.5%;
+  margin-bottom: 5%;
+  margin-top:  4%;
 }
 
 #product__application {
@@ -42,7 +46,7 @@ li, ul {
   border-radius: 1px;
   padding: auto;
   border-collapse: collapse;
-  border: 8px solid #989caf;
+  border: 5px solid #989caf;
   border-style: groove;
 }
 /* Zebra striping */

@@ -2,14 +2,27 @@
     box-sizing: border-box;
   }
   
-  .reques4t__row:after {
+  .request__row:after {
     content: "";
     display: table;
     clear: both;
   }
+
+  .request__main {
+    border-top: 6px solid #ad0000;
+    text-align: center;
+    margin-top: 5%;
+  }
   
+  .request__form {
+    display: inline-block;
+    margin: auto;
+    width: 250px;
+  }
+
   .request__container {
-    display: relative;
+    display: inline-flex;
+    text-align: center;
     border-radius: 1px;
     background-color: #103c7f;
     padding-left: 20px;
@@ -18,11 +31,13 @@
     color: white;
     border: 4px solid #989caf;
     border-style: groove;
-    margin-left: 37%;
-    margin-right: 37%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 5%;
+    margin-top: 5%;
   }
   
-  input.input__request[type=text], textarea {
+  input.input__requ9est[type=text], textarea {
     width: 100%;
     padding: 12px;
     border-radius: 4px;
@@ -31,25 +46,10 @@
   
   input.request__input[type="text"],[type="email"], textarea {
     padding: 5px 21px;
-    border-radius: 1px;
+    border-radius: 2px;
     cursor: pointer;
-    float: justify;
+    float: inherit;
     resize: vertical;
-  }
-  
-  .request__9main {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    border-radius: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    background-color: #103c7f;
-    border: 4px solid #989caf;
-    border-style: groove;
-    color: white;
   }
   
   input[type="submit"]:hover {
@@ -57,7 +57,7 @@
   }
   
   .request__label {
-    padding: 0px 12px 10px 0;
+    padding: 0px 10px 10px 0;
     display: center;
   }
   
@@ -68,20 +68,20 @@
   @media screen and (max-width: 600px) {
     .request__container,
     .request__input, textarea {
-      width: 100%;
-      margin: 0%;
       
+      margin: 5px 15px 5px 15px;
     }
-  
+    
     .request__label {
       text-align: center;
-      padding: 10px 1px 10px 5px;
+      padding: 0px 30px 0px 0px;
+      
     }
-  
+    
     .request__row {
       text-align: center;
     }
-
+    
     .request__container {
       margin-top: 10%;
       margin-bottom:10%;
