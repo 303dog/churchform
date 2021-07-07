@@ -9,16 +9,16 @@ import UploadFile from './UploadFile'
 class Products extends React.Component {
     state = {
       products: [
-        { id: 1, title: "Color Label", size: '12"x18"', count: 0, price: 2.5 },
-        { id: 2, title: "Color Label", size: '11"x17"', count: 0, price: 1.75 },
-        { id: 3, title: "Color Label", size: '8.5"x11"', count: 0, price: 2.75 },
-        { id: 4, title: "Color Label", size: '8.5"x5.5"', count: 0, price: 2.5 },
-        { id: 5, title: "Color Label", size: '4.25"x5.5"', count: 0, price: 1.75 },
-        { id: 6, title: "Standard Label", size: '12"x18"', count: 0, price: 2.8 },
-        { id: 7, title: "Standard Label", size: '11"x17"', count: 0, price: 2.5 },
-        { id: 8, title: "Standard Label", size: '8.5"x11"', count: 0, price: 1.75 },
-        { id: 9, title: "Standard Label", size: '8.5"x5.5"', count: 0, price: 2.75 },
-        { id: 10, title: "Standard Label", size: '4.25"x5.5"', count: 0, price: 2.75 },
+        { id: 1, title: "Full-Color Label", size: '12"x18"', count: 0, price: 2.5 },
+        { id: 2, title: "Full-Color Label", size: '11"x17"', count: 0, price: 1.75 },
+        { id: 3, title: "Full-Color Label", size: '8.5"x11"', count: 0, price: 2.75 },
+        { id: 4, title: "Full-Color Label", size: '8.5"x5.5"', count: 0, price: 2.5 },
+        { id: 5, title: "Full-Color Label", size: '4.25"x5.5"', count: 0, price: 1.75 },
+        { id: 6, title: "Black & White Label", size: '12"x18"', count: 0, price: 2.8 },
+        { id: 7, title: "Black & White Label", size: '11"x17"', count: 0, price: 2.5 },
+        { id: 8, title: "Black & White Label", size: '8.5"x11"', count: 0, price: 1.75 },
+        { id: 9, title: "Black & White Label", size: '8.5"x5.5"', count: 0, price: 2.75 },
+        { id: 10, title: "Black & White Label", size: '4.25"x5.5"', count: 0, price: 2.75 },
       ],
       cost: 0, 
       orderedItems: [] // NOT USEing
