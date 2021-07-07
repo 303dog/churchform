@@ -1,4 +1,3 @@
-Link {
-    display: block;
-    align-items: center;
+html {
+    max-width: auto;
 }

@@ -65,7 +65,8 @@
     display: flex;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px),
+  (min-device-width: 500px) and (max-device-width: 1024px) {
     .request__container,
     .request__input, textarea {
       

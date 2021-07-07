@@ -13,6 +13,7 @@ import Payment from "./component/Payment";
 import ProductCard from "./component/ProductCard";
 import MyGallery from "./reusable/gallery";
 import Promo from './reusable/promo'
+import './App.css'
 
 function App() {
   return (

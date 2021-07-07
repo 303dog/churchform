@@ -74,8 +74,7 @@ legend {
   text-align: center;
 }
 
-@media only screen and (max-width: 600px),
-  (min-device-width: 500px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 600px) {
   /* Force table to not be like tables anymore */
   table,
   thead,
