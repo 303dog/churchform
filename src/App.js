@@ -20,15 +20,6 @@ function App() {
     <Router>
       <NavBar />
       <MyGallery />
-      <Link to='/order' className='nav__form'>
-        Quote Calculator{" "}
-      </Link>
-      <Link to='/request' className='nav__form'>
-        Got A Question?
-      </Link>
-      <Link to='/contact' className='nav__form'>
-        Contact Us
-      </Link>
       <Layout />
       <ProductCard />
       <ContactUs />
