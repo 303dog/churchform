@@ -21,7 +21,7 @@ class Products extends React.Component {
         { id: 10, title: "Black & White Label", size: '4.25"x5.5"', count: 0, price: 2.75 },
       ],
       cost: 0, 
-      orderedItems: [] // NOT USEing
+      orderedItems: [],
     };
 
  

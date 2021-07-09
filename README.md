@@ -34,3 +34,22 @@ waiting on specs from client to finish up and link payment to Authorize.net acco
 
 
 
+
+
+
+
+
+[] Square brackets typically are optional and at the
+    most only one optional element can be selected
+
+{} Curly braces usually contain alternatives stacked.
+    Here you must select only one
+
+|  Vertical bar is for seperating alternatives
+
+
+
+
+
+
+

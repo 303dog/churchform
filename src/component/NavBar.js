@@ -11,10 +11,10 @@ export default function NavBar() {
           <NavLink to='/' exact className='nav__home'>
             Main{" "}
           </NavLink>
-          <NavLink to='/order' className='nav__form'>
+          <NavLink to='/order'className='nav__form'>
             Order Calculator{" "}
           </NavLink>
-          <NavLink to='/request' className='nav__request'>
+          <NavLink to='/request'className='nav__request'>
             Contact Us{" "}
           </NavLink>
         </nav>
