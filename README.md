@@ -1,4 +1,4 @@
-Freelance project 
+Freelance project #001
 
 
 Commissioned application: ecommerce website focusing on a single-item that comes in 10 different variations.
