@@ -17,17 +17,21 @@ import './App.css'
 
 function App() {
   return (
+    <div className='app__container'>
     <Router>
-      <NavBar />
-      <MyGallery />
+    <NavBar />
+      <Switch >     
+        <Route exact path='/' component={MyGallery}/> 
+        <Route exact path='/order' component={ProductCard}/>
+        <Route exact path='/request' component={ContactUs}/>
+      </Switch>
       <Layout />
       <ProductCard />
       <ContactUs />
-      
-      
+
       <Footer />
-    
     </Router>
+    </div>
   );
 }
 

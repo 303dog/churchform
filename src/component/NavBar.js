@@ -8,15 +8,17 @@ export default function NavBar() {
       <img className='carpet__logo' src='/logo003.JPG' alt='logo' />
       <div className='nav__div'>
         <nav className='nav__main'>
-          <NavLink to='/' exact className='nav__home'>
+        <div className='nav__home'>
+          <NavLink exact activeClassName='active-link' to='/' >
             Main{" "}
           </NavLink>
-          <NavLink to='/order'className='nav__form'>
-            Order Calculator{" "}
+          <NavLink exact activeClassName='active-link' to='/order'>
+            {" "}Order-Estimator{" "}
           </NavLink>
-          <NavLink to='/request'className='nav__request'>
-            Contact Us{" "}
+          <NavLink exact activeClassName='active-link' to='/request'>
+            {" "}Contact-Us{" "}
           </NavLink>
+        </div>
         </nav>
       </div>
     </header>

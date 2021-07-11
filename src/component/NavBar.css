@@ -23,7 +23,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto
-  
+}
+
+.active-link {
+  color: #ad0000;
+  background-color: lightblue;
+  border-bottom: 3px solid white;
+  border-radius:4px;
 }
 
 
@@ -50,42 +56,4 @@
   background: #103c7f;
   color: ghostwhite;
 }
-.nav__form {
-  margin: 0.4%;
-  padding: 1%;
-  background: #103c7f;
-  color: ghostwhite;
-}
 
-.nav__form:hover {
-  background-color: rgba(195, 207, 224, 0.774);
-  border-radius: 50%;
-}
-
-.nav__request {
-  margin: 0.4%;
-  padding: 1%;
-  background: #103c7f;
-  color: ghostwhite;
-}
-
-.nav__request:hover {
-  background-color: rgba(195, 207, 224, 0.774);
-  border-radius: 50%;
-}
-.nav__payment {
-  margin: 0.4%;
-  padding: 1%;
-  background: #103c7f;
-  color: ghostwhite;
-}
-
-.nav__payment:hover {
-  background-color: rgba(195, 207, 224, 0.774);
-  border-radius: 50%;
-}
-
-.nav__home:hover {
-  background-color: rgba(195, 207, 224, 0.774);
-  border-radius: 50%;
-}
