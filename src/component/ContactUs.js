@@ -21,52 +21,65 @@ export default function ContactUs() {
           console.log(error.text);
         }
       );
-    
   }
 
-  return ( 
+  return (
     <div className='request__main'>
-    <div className='request__container'>
-      <fieldset>
-        <legend>Contact Us!</legend>
-        <form className='request__form' onSubmit={sendEmail}>
-          <div className='request__row'>
-            <label HTMLfor='f_name' className='request__label'>
-              First Name:{" "}
-              <input className='request__input' type='text' name='f_name' />
-            </label>
-            
-            <label HTMLfor='l_name' className='request__label'>
-              Last Name:{" "}
-              <input className='request__input' type='text' name='l_name' />
-            </label>
-            
-            
-              <label HTMLfor='tel' className='request__label'>
-              <i class="fas fa-phone-square"></i>{" "}
-                <input className='request__input' type='tel' id='tel' name='tel' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='###-###-####' />
+      <div className='request__container'>
+        <fieldset>
+          <legend>Contact Us!</legend>
+          <form className='request__form' onSubmit={sendEmail}>
+            <div className='request__row'>
+              <label HTMLfor='f_name' className='request__label'>
+                First Name:{" "}
+                <input className='request__input' type='text' name='f_name' />
               </label>
-            
+
+              <label HTMLfor='l_name' className='request__label'>
+                Last Name:{" "}
+                <input className='request__input' type='text' name='l_name' />
+              </label>
+
+              <label HTMLfor='tel' className='request__label'>
+                <i class='fas fa-phone-square'></i>{" "}
+                <input
+                  className='request__input'
+                  type='tel'
+                  id='tel'
+                  name='tel'
+                  pattern='[0-9]{3}-[0-9]{3}-[0-9]{4}'
+                  placeholder='###-###-####'
+                />
+              </label>
+
               <label HTMLfor='email' className='request__label'>
-              <h5><i class="fas fa-at"></i>email.com</h5>{" "}
+                <h5>
+                  <i class='fas fa-at'></i>email.com
+                </h5>{" "}
                 <input className='request__input' type='email' name='email' />
               </label>
-            
+
               <label HTMLfor='message' className='request__label'>
-                Message: <textarea cols='20' rows='10'maxlength='500' name='message' placeholder='including details such as sizes and quantities will help us help you faster' />
+                Message:{" "}
+                <textarea
+                  cols='20'
+                  rows='10'
+                  maxlength='500'
+                  name='message'
+                  placeholder='including details such as sizes and quantities will help us help you faster'
+                />
               </label>
-            
-            <label>Attach file:</label>
-    <input type="file" name="my_file"/> 
-    <input type="submit" value="Submit"/>
-            
+
+              <label>Attach file:</label>
+              <input type='file' name='my_file' />
+              <input type='submit' value='Submit' />
+
               <input type='submit' name='submit' />
               <input type='reset' name='reset' />
-            
-          </div>
-        </form>
-      </fieldset>
-    </div>
+            </div>
+          </form>
+        </fieldset>
+      </div>
     </div>
   );
 }
