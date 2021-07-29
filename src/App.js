@@ -25,10 +25,6 @@ function App() {
         <Route exact path='/order' component={ProductCard}/>
         <Route exact path='/request' component={ContactUs}/>
       </Switch>
-      <Layout />
-      <ProductCard />
-      <ContactUs />
-
       <Footer />
     </Router>
     </div>

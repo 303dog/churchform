@@ -9,9 +9,8 @@
   }
 
   .request__main {
-    border-top: 6px solid #ad0000;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
   }
   
   .request__form {
@@ -33,8 +32,8 @@
     border-style: groove;
     margin-left: 35%;
     margin-right: 35%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
   }
   
   input.input__requ9est[type=text], textarea {
