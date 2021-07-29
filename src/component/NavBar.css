@@ -20,9 +20,9 @@
 .carpet__logo {
   width: 400px;
   height: 100px;
-  display: block;
+  display: flex;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 .active-link {
@@ -43,7 +43,7 @@
   color: white;
 }
 
-.nav__div {
+.nav__di8v {
   margin: 0;
   padding: 0;
   background: white;
@@ -51,7 +51,7 @@
 }
 
 .nav__home {
-  margin: 0.4%;
+  margin: 0.1%;
   padding: 1%;
   background: #103c7f;
   color: ghostwhite;

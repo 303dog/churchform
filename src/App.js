@@ -25,6 +25,8 @@ function App() {
         <Route exact path='/order' component={ProductCard}/>
         <Route exact path='/request' component={ContactUs}/>
       </Switch>
+      <Promo />
+      <Layout />
       <Footer />
     </Router>
     </div>

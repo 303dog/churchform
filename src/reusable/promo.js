@@ -7,17 +7,15 @@ const Promo = () => (
       <div className='promo__main'>
         <div className='promo__cc'>
           <div className='promo__mc'>
-            <i class='fab fa-cc-visa icon-2x'></i>
-          </div>
-          <div className='promo__mc'>
-            <i class='fab fa-cc-mastercard'></i>
+            <img className='promo__img' src='/csr.png' alt='iron-on' />
+            <img className='promo__img' src='/speedy.png' alt='speedy service' />
+            <img className='promo__img' src='/greenEco.png' alt='iron-on' />
+            <img className='promo__img' src='/goldQuality.png' alt='best quality' />
+            <img className='promo__img' src='/piggySave.png' alt='best price' />
+            <img className='promo__img' src='/blackIron.png' alt='iron-on' />
+        
+            <img className='promo__img' src='/shipIt.png' alt='iron-on' />
             </div>
-          <div className='promo__mc'>
-            <i class='fab fa-cc-amex'></i>
-          </div>
-          <div className='promo__mc'>
-            <i class='fab fa-cc-discover'></i>
-          </div>
         </div>
       </div>
     </div>
