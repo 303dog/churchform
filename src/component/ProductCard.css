@@ -28,6 +28,7 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: auto;
+    margin-bottom: 3%;
   }
   
   .btn__checkout span {

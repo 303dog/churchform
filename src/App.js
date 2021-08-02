@@ -20,8 +20,8 @@ function App() {
     <div className='app__container'>
     <Router>
     <NavBar />
+    <MyGallery />
       <Switch >     
-        <Route exact path='/' component={MyGallery}/> 
         <Route exact path='/order' component={ProductCard}/>
         <Route exact path='/request' component={ContactUs}/>
       </Switch>

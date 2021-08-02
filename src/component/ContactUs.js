@@ -74,7 +74,6 @@ export default function ContactUs() {
               <input type='file' name='my_file' />
               <input type='submit' value='Submit' />
 
-              <input type='submit' name='submit' />
               <input type='reset' name='reset' />
             </div>
           </form>
