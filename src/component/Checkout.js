@@ -1,20 +1,15 @@
 import React from "react";
-import "./OrderedItem.css";
+import "./Checkout.css";
 
-
-//props from Products/usersOrder
-const Ordered = (props) => (
-  <>
-  
-    <div className='order__container'>
-      <fieldset>
-        <legend>Confirm Your Order</legend>
+function Checkout(props) {
+     return (
+  <div className='checkout__container'>
         <div className='order__row'>
           <table>
             <thead>
               <tr>
                 <th>
-                <i className='fas fa-palette'></i>
+                  <i className='fas fa-palette'></i>
                 </th>
                 <th>
                   <i className='fas fa-ruler-combined'></i>
@@ -27,19 +22,19 @@ const Ordered = (props) => (
                 </th>
               </tr>
             </thead>
-            {props.products.map((item, i) => (
-              <tr key={i}>
+            {props.cost.map((item) => {
+              return (
+              <tr>
                 <td className='order__selectS'>{item.title}</td>
                 <td className='order__selectT'>{item.size}</td>
                 <td className='order__selectB'>{item.count}</td>
                 <td className='order__selectR'>{item.price}</td>
               </tr>
-            ))}
+            )})};
           </table>
         </div>
-      </fieldset>
-    </div>
-  </>
-);
+  </div>
+     )
+};
 
-export default Ordered;
+export default Checkout;

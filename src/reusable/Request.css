@@ -1,0 +1,55 @@
+.request__container {
+    background-color:white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    color: black;
+}
+
+.request {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.request__upload {
+    border: 2px solid black;
+    margin: 10px;
+    align-items: center;
+}
+
+.request__container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.request__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.request__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    width: 98%;
+}
+
+.request__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.request__submitButton {
+    background: #f3de22;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+  }

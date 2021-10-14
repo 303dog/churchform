@@ -10,10 +10,10 @@ export default function NavBar() {
         <nav className='nav__main'>
         <div className='nav__home'>
           <NavLink exact activeClassName='active-link' to='/' >
-            Main{" "}
+            Main{" "}|
           </NavLink>
           <NavLink exact activeClassName='active-link' to='/order'>
-            {" "}Order-Estimator{" "}
+            {" "}Order-Estimator{" "}|
           </NavLink>
           <NavLink exact activeClassName='active-link' to='/request'>
             {" "}Contact-Us{" "}

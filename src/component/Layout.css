@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(235, 238, 243, 0.774);
+  background-color: rgba(251, 253, 255, 0.993);
   font-weight: 400;
 }
 
@@ -26,9 +26,20 @@ ul {
   text-align: justify;
   padding: auto;
   margin: 15px 15px 75px 15px;
-
 }
 
+#product__td2 {
+  background-color: #ad0000;
+  font-weight: 500;
+  border: 2px solid black;
+}
+
+#product__td1 {
+  background-color: #103c7f;
+  color: white;
+  font-weight: 500;
+  border: 2px solid black;
+}
 .layout__section {
   margin: auto;
   padding: 0.5%;
@@ -62,7 +73,7 @@ ul {
 #product__th {
   background: #103c7f;
   color: white;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -95,6 +106,7 @@ ul {
     top: -9999px;
     left: -9999px;
   }
+
 
   #product__td1 {
     text-align: center;

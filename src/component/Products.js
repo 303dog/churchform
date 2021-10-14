@@ -3,11 +3,23 @@ import ProductList from './ProductList';
 import Total from './Total';
 import Ordered from './OrderedItem'
 import UploadFile from './UploadFile'
+import Checkout from './Checkout'
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+  Link
+} from "react-router-dom";
 
 
 
 class Products extends React.Component {
-    state = {
+  constructor (props) {
+    super(props)
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
+    this.state = {
       products: [
         { id: 1, title: "Full-Color Label", size: '12"x18"', count: 0, price: 2.5 },
         { id: 2, title: "Full-Color Label", size: '11"x17"', count: 0, price: 1.75 },
@@ -23,6 +35,7 @@ class Products extends React.Component {
       cost: 0, 
       orderedItems: [],
     };
+  }
 
  
     // working running total as user selects
@@ -42,7 +55,9 @@ class Products extends React.Component {
       this.setState({
         cost: owed$,
         products: this.state.products.map((product, i) => i === index ? { ...product, count: e.target.value } : product),
+     
       }); 
+    
     };
 
     componentDidUpdate(prevProps, prevState) {
@@ -80,7 +95,9 @@ class Products extends React.Component {
             <Total products={this.state.products} />
             <Ordered
             products={this.state.products.filter((item) => item.count > 0)} />
-           <button className='btn__checkout' onClick={this.onSubmit}><span>Checkout</span></button>
+           
+           <button onClick={this.onSubmit} className='btn__checkout'><span>Checkout</span></button>
+        
           </div>
         </>
       );
